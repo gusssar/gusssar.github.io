@@ -1,0 +1,525 @@
+<!DOCTYPE HTML>
+<html lang='ru'>
+<head>
+    <meta charset="UTF-8">
+    <title>FrontEnd Gusssar</title>
+    <link rel="shortcut icon" href="./img/icons/favicon_32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hello.css">
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/works.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/contact-anim.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="./js/jquery.viewportchecker.js"></script>
+    <script src="./js/amcharts.js"></script>
+    <script src="./js/serial.js"></script>
+    <script src="./js/alex_theme.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/slides.js"></script>
+    <script src="./js/view-plugin.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <!--Раскомментить ниже-->
+    <!--<script type="text/javascript" >-->
+        <!--(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};-->
+            <!--m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})-->
+        <!--(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");-->
+
+        <!--ym(52275658, "init", {-->
+            <!--id:52275658,-->
+            <!--clickmap:true,-->
+            <!--trackLinks:true,-->
+            <!--accurateTrackBounce:true,-->
+            <!--webvisor:true-->
+        <!--});-->
+    <!--</script>-->
+    <!--<noscript><div><img src="https://mc.yandex.ru/watch/52275658" style="position:absolute; left:-9999px;" alt="" /></div></noscript>-->
+    <!--До сюда-->
+    <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+    <div class="root">
+       <header>
+           <ul>
+               <li class="head-link logo_alex">
+                   <a href="https://gusssar.github.io/">
+                   </a>
+               </li>
+               <li class="head-link"><a href="#hello">ПРИВЕТ</a></li>
+               <li class="head-link"><a href="#intro">ВВЕДЕНИЕ</a></li>
+               <li class="head-link"><a href="#skills">НАВЫКИ</a></li>
+               <li class="head-link"><a href="#works">РАБОТЫ</a></li>
+               <li class="head-link"><a href="#about">О СЕБЕ</a></li>
+               <li class="head-link"><a href="#contact">КОНТАКТЫ</a></li>
+           </ul>
+       </header>
+        <!--<div class="header">-->
+            <!--<div class="header-nav" id="id-header-nav">-->
+                <!--<ul>-->
+                    <!--<li class="logo_alex">-->
+                        <!--<a href="https://gusssar.github.io/">-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li class="head-link" id="id-nav-hello-1"><a href="#hello">ПРИВЕТ</a></li>-->
+                    <!--<li class="head-link" id="id-nav-intro-1"><a href="#intro">ВВЕДЕНИЕ</a></li>-->
+                    <!--<li class="head-link" id="id-nav-skills-1"><a href="#skills">НАВЫКИ</a></li>-->
+                    <!--<li class="head-link" id="id-nav-works-1"><a href="#works">РАБОТЫ</a></li>-->
+                    <!--<li class="head-link" id="id-nav-about-1"><a href="#about">О СЕБЕ</a></li>-->
+                    <!--<li class="head-link" id="id-nav-contact-1"><a href="#contact">КОНТАКТЫ</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="fake-header"></div>-->
+        <div class="content">
+            <div class="content-body">
+                <div class="content-hello content-view invisible">
+                    <div id="hello">
+                        <div>ПРИВЕТ</div>
+                        <div>МЕНЯ ЗОВУТ АЛЕКСЕЙ</div>
+                        <div>Я ВЕБ РАЗРАБОТЧИК</div>
+                        <div>Я ФОКУСИРУЮСЬ НА ГАРМОНИЧНОМ СОЧЕТАНИИ</div>
+                        <div>ДИЗАЙНА И КОДА</div>
+                    </div>
+                    <div class="content-hello-to-intro  next-link" id="id-nav-intro-2">
+                        <a href="#intro">ВВЕДЕНИЕ</a>
+                    </div>
+                </div>
+
+                <div class="content-intro content-view invisible" id="intro">
+                        <div class="logo intro-line">
+                            <div class="wrapper">
+                                <div class="aa">A.A</div>
+                                <div class="boxes">
+                                    <div class="one box">JS</div>
+                                    <div class="two box"></div>
+                                    <div class="three box">HTML</div>
+                                    <div class="four box"></div>
+                                    <div class="five box">NODE</div>
+                                    <div class="six box">CSS3</div>
+                                </div>
+                            </div>
+                            <div class="tags">
+                                <div class="tag">HTML5</div>
+                                <div class="tag">CSS3</div>
+                                <div class="tag">JS</div>
+                                <div class="tag">NODE.JS</div>
+                                <div class="tag">JQUERY</div>
+                            </div>
+                        </div>
+                        <div class="code intro-line">
+                            <div class="code-body">
+                            <pre>
+.logo {
+    cursor:pointer;
+    width:40vw;
+    height:49vh;
+    position:relative;
+    float: left;
+    left:10vh;.
+    z-index: 2;
+}
+.wrapper {
+    font-size:40px;
+    line-height:140px;
+    position:absolute;
+    top:230px;
+    left:315px;
+    height:140px;
+    width:140px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin:50%;
+    -webkit-animation-name: ciycle;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 12s;
+}
+.boxes {
+     position:absolute;
+     top:0;
+     left:0;
+     -webkit-transition: all 1s ease-in-out;
+ }
+.aa {
+    background: #363636;
+    color:#fff;
+    border-radius:80px;
+    position:absolute;
+    top:-200px;
+    left:0;
+    height:140px;
+    width:140px;
+    text-align:center;
+    -webkit-box-shadow: rgba(0,0,0,0.08) 1px 1px 2px 3px;
+    -webkit-transition:all 0.8s ease-in-out;
+    -webkit-animation-name: ciycle2;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 1.4s;
+}
+.tags {
+    position:absolute;
+    top:230px;
+    left:315px;
+    text-align:center;
+    color: white;
+    font-size: 25px;
+    line-height:160px;
+    height:100px;
+    width:100px;
+    opacity:0;
+    -webkit-transition: all .5s ease-out;
+    -webkit-transition-delay: 0.30s;
+}
+.tag {
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    -webkit-animation-name: tag;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 2.5s;
+}
+.tag:nth-child(1) {
+    -webkit-animation-delay:0s;
+}
+.tag:nth-child(2) {
+    -webkit-animation-delay:.5s;
+}
+.tag:nth-child(3) {
+    -webkit-animation-delay:1s;
+}
+.tag:nth-child(4) {
+    -webkit-animation-delay:1.5s;
+}
+.tag:nth-child(5) {
+    -webkit-animation-delay:2s;
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six{
+    border-radius:2px;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 160px;
+    height: 160px;
+    opacity:0.50;
+    line-height:140px;
+    text-align:center;
+    color:#fff;
+    -webkit-transition: all 1s ease-in-out;
+}
+.one {
+    background: #000000;
+    -webkit-transform:translateZ(80px);
+}
+
+.two {
+    background: #a30000;
+    -webkit-transform: rotateX(90deg) translateY(0) translateZ(-80px);
+}
+
+.three {
+    background:blue;
+    -webkit-transform: translateY(0) translateZ(-80px);
+}
+.four {
+    background:green;
+    -webkit-transform: rotateX(90deg) translateY(0) translateZ(80px);
+}
+.five {
+    background:darkblue;
+    -webkit-transform: rotateY(-90deg) translateX(0) translateY(0) translateZ(80px);
+}
+.six {
+    background:purple;
+    -webkit-transform: rotateY(90deg) translateX(0) translateZ(80px) translateY(0);
+}
+.logo:hover .box {
+    background:gray;
+    opacity:0.25;
+}
+.logo:hover .one{
+    -webkit-transform: rotateX(90deg) translateZ(80px) translateY(160px);
+    -webkit-transform-origin: 100%;
+}
+.logo:hover .two{
+    -webkit-transform: rotateX(90deg) translateY(0) translateZ(80px);
+    opacity:1;
+}
+.logo:hover .three {
+    -webkit-transform: rotateX(-90deg) translateY(160px) translateZ(-80px);
+}
+.logo:hover .five {
+    -webkit-transform: rotateZ(90deg) rotateY(-90deg) translateX(0) translateY(160px) translateZ(80px);
+}
+.logo:hover .six{
+    -webkit-transform: rotateY(90deg) translateX(80px) translateZ(80px) translateY(-80px) rotateX(90deg);
+    -webkit-transform-origin: 100%;
+}
+
+.logo:hover .boxes {
+    top:80px;
+}
+
+.logo:hover .aa {
+    top:-250px;
+}
+.logo:hover .tags {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin:50%;
+    -webkit-transform:  rotateX(-200deg) rotateY(-180deg) rotateZ(-180deg);
+    top: 220px;
+    left: 350px;
+    opacity:1;
+}
+
+@-webkit-keyframes ciycle {
+    from {
+        -webkit-transform: rotateX(-25deg) rotateY(0deg);
+    }
+    to {
+        -webkit-transform: rotateX(-25deg) rotateY(360deg);
+    }
+}
+
+@-webkit-keyframes ciycle2 {
+    from {
+        -webkit-transform: rotateY(0deg);
+    }
+    to {
+        -webkit-transform: rotateY(-360deg);
+    }
+}
+
+@-webkit-keyframes ciycle3 {
+    from {
+        -webkit-transform:rotateY(180deg) translateZ(1px);
+    }
+    to {
+        -webkit-transform:rotateY(-180deg) translateZ(1px);
+    }
+}
+
+@-webkit-keyframes tag {
+    0%{
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+        top:-140px;
+    }
+}
+                            </pre>
+                            </div>
+                        </div>
+                    <div class="some-words">Добро пожаловать на сайт с моим портфолио.<br>
+                                        Здесь я постараюсь Вам представиться!</div>
+                    <div class="watermark">ВВЕДЕНИЕ</div>
+                    <div class="content-intro-to-skills  next-link" id="id-nav-skills-2">
+                        <a href="#skills">НАВЫКИ</a>
+                    </div>
+                </div>
+
+                <div class="content-skills content-view-3 invisible" id="skills">
+                    <div class="skills-body skills-words">Самостоятельно приобретённых навыков достаточно для полноценной Frontend-разработки</div>
+                    <div class="skills-body skills-canvas">
+                        <div></div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="skills-body skills-info">
+                        <pre>
+[
+    {
+        "name": "HTML",
+        "value": 10
+    },
+    {
+        "name": "CSS",
+        "value": 9
+    },
+    {
+        "name": "jQuery",
+        "value": 5
+    },
+    {
+        "name": "Node.js",
+        "value": 6
+    },
+    {
+        "name": "JavaScript",
+        "value": 5
+    },
+    {
+        "name": "SQL",
+        "value": 4
+    }
+]
+
+                        </pre>
+                    </div>
+                    <div class="watermark">НАВЫКИ</div>
+                    <div class="content-skills-to-works  next-link" id="id-nav-works-2">
+                        <a href="#works">РАБОТЫ</a>
+                    </div>
+                </div>
+                <div class="content-works content-view invisible" id="works">
+                    <div class="row wrap">
+                        <div class="slides_thumbs">
+                            <div class="slide_imgs">
+                                <a href="img/png/bulletin-board.png">
+                                    <img alt="Доска объявлений"
+                                         src="img/png/bulletin-board.png"
+                                         data-path="https://github.com/gusssar/bulletin-board"
+                                         title='"Доска объявлениий" реализованное с помощью React.js'></a>
+                                <a href="img/png/djino.png">
+                                    <img alt="Промо-страница"
+                                         src="img/png/djino.png"
+                                         data-path="https://github.com/gusssar/DjiniTestSecond"
+                                         title='Промо-странца'></a>
+                                <a href="img/png/table.png">
+                                    <img alt="Табло Шереметьево"
+                                         src="img/png/table.png"
+                                         data-path="https://github.com/gusssar/table-air-1"
+                                         title='Табло Шереметьево реализованное с помощью React.js'></a>
+                                <a href="img/png/yandex_home.png">
+                                    <img alt="Яндекс.Дом"
+                                         src="img/png/yandex_home.png"
+                                         data-path="https://github.com/gusssar/entrance_task_2"
+                                         title="Макет страницы &quotЯндекс.Дом&quot"></a>
+                                <a href="img/png/secret_page.png">
+                                    <img alt="Личный проект"
+                                         src="img/png/secret_page.png"
+                                         data-path="https://github.com/gusssar"
+                                         title='Постоянный личный проект, который я делаю в свое свободное время.'></a>
+                                <a href="img/png/next_page.png">
+                                    <img alt="Дальше жарче"
+                                         src="img/png/next_page.png"
+                                         data-path="https://gusssar.github.io/#contact"
+                                         title='Может я Вам смогу помочь с проектом, обязательно свяжитесь со мной'></a>
+                            </div>
+                        </div>
+                    </div>
+                    <script>$("div.slides_thumbs").slides({thumbs: "on"});</script>
+                    <div class="watermark">РАБОТЫ</div>
+                    <div class="content-works-to-about  next-link" id="id-nav-about-2">
+                        <a href="#about">О СЕБЕ</a>
+                    </div>
+                </div>
+                <div class="content-about content-view-2 invisible" id="about">
+                    <div class="about-inline about-love">
+                        <h1>Что я люблю</h1>
+                        <table>
+                            <tr>
+                                <td><h2>Друзья и Семья</h2>Они делают мою жизнь насыщенной</td>
+                                <td><img src="img/png/friends.png"></td>
+                            </tr>
+
+                            <tr>
+                                <td><h2>Фантаскика</h2>Безграничная фантазия автора не может не удивлять</td>
+                                <td><img src="img/png/film.png"></td>
+                            </tr>
+                            <tr>
+                                <td><h2>Кофe</h2>И никакого сахара и молока!</td>
+                                <td><img src="img/png/coffee.png"></td>
+                            </tr>
+                            <tr>
+                                <td><h2>Игры</h2>Кто не любит играть?</td>
+                                <td><img src="img/png/console.png"></td>
+                            </tr>
+                            <tr>
+                                <td><h2>Hip-Hop</h2>Стиль для тех кто ценит смысл</td>
+                                <td><img src="img/png/necklace.png"></td>
+                            </tr>
+                            <tr>
+                                <td><h2>Мой PC&Mac</h2>PC для кода, MAC для похода</td>
+                                <td><img src="img/png/pc-coding.png"></td>
+                            </tr>
+                            <tr>
+                                <td><h2>Себя</h2>Иногда я люблю себя</td>
+                                <td><img src="img/png/profile.png"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="about-inline about-chart" id="chartdiv"></div>
+                    <div class="about-inline about-hate">
+                        <h1>Что я ненавижу</h1>
+                        <table>
+                            <tr>
+
+                                <td><img src="img/png/speech.png"></td>
+                                <td><h2>Политика</h2>Сколько можно...</td>
+                            </tr>
+                            <tr>
+
+                                <td><img src="img/png/speech-bubble.png"></td>
+                                <td><h2>Болтовня</h2>Хуже нет разговоров ни о чём</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/png/frown.png"></td>
+                                <td><h2>Пессимизм</h2>Только здоровый реализм!</td>
+                            </tr>
+                            <tr>
+
+                                <td><img src="img/png/bug.png"></td>
+                                <td><h2>Баги</h2>Покажите мне человека, который их любит</td>
+                            </tr>
+                            <tr>
+
+                                <td><img src="img/png/smug.png"></td>
+                                <td><h2>Высокомерие</h2>Все мы люди</td>
+                            </tr>
+                            <tr>
+
+                                <td><img src="img/png/profile.png"></td>
+                                <td><h1>Себя</h1>Иногда я ненавижу себя</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="watermark">О СЕБЕ</div>
+                    <div class="content-about-to-contact  next-link" id="id-nav-contact-2">
+                        <a href="#contact">КОНТАКТЫ</a>
+                    </div>
+                </div>
+                <div class="content-contact content-view invisible" id="contact">
+                    <div class="contact-body">
+                        <a href="https://www.facebook.com/gusssar">
+                            <img src="./img/svg/facebook.svg" class="fb"></a>
+                        <a href="https://github.com/gusssar">
+                            <img src="./img/svg/github-logo.svg" class="gh"></a>
+                        <a href="https://ru.stackoverflow.com/users/302367/gusssar">
+                            <img src="./img/svg/stack-exchange-symbol.svg" class="st"></a>
+                        <a href="https://twitter.com/yanggussar">
+                            <img src="./img/svg/twitter.svg" class="tw"></a>
+                        <a href="https://vk.com/yanggussar">
+                            <img src="./img/svg/vk.svg" class="vk"></a>
+                        <a href="mailto:a.alexeev.mai@yandex.ru">
+                            <img src="./img/svg/gmail.svg" class="mail"></a>
+                    </div>
+                    <div class="watermark">КОНТАКТЫ</div>
+                    <div class="content-contact-to-hello next-link" id="id-nav-hello-2">
+                        <a href="#hello">В НАЧАЛО</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

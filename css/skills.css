@@ -1,0 +1,44 @@
+/*НАВЫКИ*/
+.content-skills{
+    position: relative;
+    text-align: center;
+    height: 90vh;
+    padding: 10vh 0 0;
+}
+
+
+.skills-body{
+    display: inline-block;
+}
+.skills-words{
+    position: relative;
+    float: left;
+    width: 20vw;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    font-size: 18px;
+}
+.skills-canvas{
+    position: relative;
+    margin: 0 -10vw 0 -20vw;
+
+}
+.skills-info{
+    float: right;
+    white-space: pre;
+    position: relative;
+    width: 20vw;
+    margin: -30px 0 -100px -100px;
+    height: 70vh;
+    border-radius: 5px;
+    font-family: "Fira Code";
+    color: #000000;
+    font-size: 14px;
+    text-align: left;
+    padding: 10px;
+    overflow: hidden;
+}
+#myChart{
+    width: 900px !important;
+    height: 450px !important;
+}

@@ -1,0 +1,51 @@
+.mail-anim {
+
+    animation: 5s linear 0s normal none infinite running mail-anim;
+}
+
+@keyframes mail-anim {
+    0% {
+        transform: rotate(0deg) translate(0,0) scale(1);
+    }
+    25%{
+        transform: rotate(30deg)  scale(0.9);
+    }
+    50%{
+        transform: rotate(0deg) translate(0,0)  scale(1);
+    }
+    75%{
+        transform: rotate(-30deg)  scale(0.9);
+    }
+    100% {
+        transform: rotate(0deg) translate(0,0)  scale(1);
+    }
+
+}
+
+.fb-anim{
+    animation: 10s linear 2s normal none infinite running fb-anim;
+}
+
+@keyframes fb-anim {
+    from { transform: rotate(0deg) translateX(200%) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(200%) rotate(-360deg); }
+}
+
+.gh-anim{
+    animation: 10s linear 4s normal none infinite running fb-anim;
+}
+
+.st-anim{
+    animation: 10s linear 6s normal none infinite running fb-anim;
+}
+
+
+.tw-anim{
+    animation: 10s linear 8s normal none infinite running fb-anim;
+}
+
+
+.vk-anim{
+    animation: 10s linear 10s normal none infinite running fb-anim;
+}
+

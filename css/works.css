@@ -1,0 +1,113 @@
+.content-works{
+    position: relative;
+    text-align: center;
+    height: 90vh;
+    padding: 10vh 0 0;
+}
+
+.slide_image_title a{
+    text-decoration:none;
+    border:none;
+    color:crimson;
+}
+
+
+/*Slides default image */
+.reg{max-height:500px;}
+/*Full width image */
+.full{width:100%;}
+/* Marker border radius*/
+.round{border-radius: 5px;}
+/*Slides Main image and title*/
+.slides_view_wrap {
+    position:relative;
+    margin-bottom: 20px;}
+.slide_view {
+    max-width:70%;
+    margin:0 auto;
+    background:#373737;
+    max-height:600px;
+    overflow: hidden;
+}
+.slide_view img {
+    display:block;
+    margin:0 auto;
+    max-width:100%;
+}
+.slide_image_title {
+    text-align:center;
+    display:block;
+    width:70%;
+    margin:0 auto;
+    background:#F0F0F0;
+    opacity: 0.3;
+}
+.slide_image_title p {margin:0px; padding:6px 4px; color:black;}
+.slide_image_title a {position:relative; z-index:1500;}
+
+.back{
+    position:absolute;
+    z-index:1500;
+    padding:20px;
+    cursor:pointer;
+    background: white;
+    opacity: 0;
+    top:10%;
+    left: 150px;
+    text-decoration:none;
+    font-size: 1.5em;
+}
+
+.next{
+    position:absolute;
+    right:150px;
+    z-index:1500;
+    padding:20px;
+    cursor:pointer;
+    background: white;
+    opacity: 0;
+    top:10%;
+    text-decoration:none;
+    font-size:1.5em;
+}
+
+.back:hover{
+    opacity:1;
+    text-decoration:none;
+}
+.next:hover{
+    opacity:1;
+    text-decoration:none;
+}
+.back a{color:#909090;}
+.next a{color:#909090;}
+@media (max-width: 700px) {
+    /*remove back and next for mobile*/
+    .back, .next {display:none;}
+}
+
+/*Slide Images Thumbnails*/
+.slide_imgs {text-align:center; max-width: 930px; margin:0 auto; padding-bottom: 20px;}
+.slide_imgs a img{width:10%; margin:.5%;}
+@media (max-width: 900px){
+    .slide_imgs {width:95%;text-align: justify}
+    .slide_imgs a img{width:23%; margin:.5%}
+}
+/*Active State for thumbs*/
+.active {box-shadow:0px 0px 2px 2px #686868;}
+
+/*Make text unselectable on back and next buttons*/
+.no_select{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+
+
+

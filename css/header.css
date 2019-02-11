@@ -1,0 +1,100 @@
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;/*вынос наверх*/
+    background: rgba(0,79,80,0.9);
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around; /*растягивание по контейнеру*/
+    padding: 0; /*убивает передний дефолтный отступ*/
+    align-items: center;
+}
+
+.head-link{
+    list-style-type: none;
+    min-width: 82px;
+    /*max-width: 140px;*/
+    /*flex: 1 1 100px;*/
+
+}
+.head-link a{
+    text-decoration: none;
+    color: #ecf7fa;
+    letter-spacing: 1.5px;
+}
+.logo_alex a{
+    width: 32px;
+    height: 32px;
+    display: block;
+    float: right;
+    background: url("../img/icons/favicon_32x32.png") no-repeat 0 0;
+}
+
+
+
+/*.header{*/
+    /*position: fixed;*/
+    /*z-index: 99999;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*opacity: 1;*/
+/*}*/
+/*.header-nav{*/
+    /*max-width: 1366px;*/
+    /*min-width: 910px;*/
+    /*margin: 0 auto;*/
+    /*background: #004f50;*/
+/*}*/
+/*.header-nav ul{*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+/*.header-nav ul li{*/
+    /*display: inline-block;*/
+    /*white-space: nowrap;*/
+    /*width: 14.19%;*/
+    /*margin-right: -5px;*/
+    /*text-align: center;*/
+/*}*/
+
+/*.header-nav a{*/
+    /*font-size: 100%;*/
+    /*max-font-size: 18px;*/
+    /*color: #ecf7fa;*/
+    /*text-decoration: none;*/
+    /*padding: 20px 50px;*/
+/*}*/
+/*.head-link{*/
+    /*padding: 15px 0;*/
+/*}*/
+/*.head-link:hover{*/
+    /*background: #3b3b4a;*/
+/*}*/
+
+/*.fake-header{*/
+    /*width: 100%;*/
+    /*position: relative;*/
+    /*top: 0;*/
+    /*height: 0;*/
+/*}*/
+
+/*.logo_alex{*/
+    /*height: 52px;*/
+    /*margin: 0 0 -20px;*/
+/*}*/
+
+/*.logo_alex a{*/
+    /*position: relative;*/
+    /*background: url("../img/icons/favicon_32x32.png") no-repeat 100px 15px;*/
+    /*width: 193px;*/
+    /*height: 52px;*/
+    /*display: block;*/
+    /*padding: 0;*/
+    /*-webkit-transition: all 0.5s ease;*/
+    /*-moz-transition: all 0.5s ease;*/
+    /*-ms-transition: all 0.5s ease;*/
+    /*-o-transition: all 0.5s ease;*/
+    /*transition: all 0.5s ease;*/
+/*}*/

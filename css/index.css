@@ -3,17 +3,17 @@ body,
 .root{
     margin: 0;
     padding: 0;
-    /*font-family:'Gotham-ExtraLight',Sans-Serif;*/
     font-family: 'PT Serif', serif;
-    background: #004f50;
+    /*background: #004f50;*/
+    background: #00acad;
 }
 .content{
     position: relative;
 }
 .content-body{
-    max-width: 1364px;
-    min-width: 910px;
-    margin: 0 auto;
+    /*max-width: 1364px;*/
+    /*min-width: 910px;*/
+    /*margin: 0 auto;*/
     text-align: center;
 }
 

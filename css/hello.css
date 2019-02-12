@@ -1,33 +1,64 @@
 /*ПРИВЕТ*/
-.content-hello{
-     position: relative;
-     text-align: center;
-     height: 100vh;
- }
 
-#hello{
-    padding: 20vh 0;
+.content-hello{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    height: 100vh;
 }
+#hello{
+    grid-column: 3/6;
+    grid-row: 3/6;
+}
+
 #hello div:first-child{
     font-size: 6.3vw;
     padding: 10px;
     font-weight: bold;
 }
 
-#hello div:nth-child(2){
-    font-size: 2.15vw;
-    padding: 5px;
+
+.content-hello-to-intro{
+    grid-column: 3/6;
+    grid-row: 7/8;
+    align-self: center;
 }
-#hello div:nth-child(3){
-    font-size: 2.33vw;
-    padding: 5px;
-    font-weight: bold;
+.content-hello-to-intro a{
+    text-decoration: none;
+    color: rgba(250,235,215,0.3);
+    padding: 20px 42px;
+    vertical-align: bottom;
 }
-#hello div:nth-child(4){
-    font-size: 0.97vw;
-    padding: 5px;
+.content-hello-to-intro a:hover{
+    background: url("../img/png/down-arrow.png") no-repeat 0 13px;
+    color: rgba(250,235,215,1);
 }
-#hello div:last-child{
-    font-size: 2.7vw;
-    padding: 5px;
-}
+
+/*.content-hello{*/
+     /*position: relative;*/
+     /*text-align: center;*/
+     /*height: 100vh;*/
+ /*}*/
+
+/*#hello{*/
+    /*padding: 20vh 0;*/
+/*}*/
+
+
+/*#hello div:nth-child(2){*/
+    /*font-size: 2.15vw;*/
+    /*padding: 5px;*/
+/*}*/
+/*#hello div:nth-child(3){*/
+    /*font-size: 2.33vw;*/
+    /*padding: 5px;*/
+    /*font-weight: bold;*/
+/*}*/
+/*#hello div:nth-child(4){*/
+    /*font-size: 0.97vw;*/
+    /*padding: 5px;*/
+/*}*/
+/*#hello div:last-child{*/
+    /*font-size: 2.7vw;*/
+    /*padding: 5px;*/
+/*}*/

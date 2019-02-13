@@ -25,20 +25,28 @@ body,
 }
 
 .watermark{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 80px;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    font-size: 5.5vw;
     z-index: -1;
     opacity: 0.1;
+
+    grid-column: 5/8;
+    grid-row: 7/8;
+    justify-self: end;
 }
 
 .next-link{
-    position: absolute;
-    bottom: 3vh;
-    margin: 0 auto;
-    right: 0;
-    left: 0;
+    /*position: absolute;*/
+    /*bottom: 3vh;*/
+    /*margin: 0 auto;*/
+    /*right: 0;*/
+    /*left: 0;*/
+
+    grid-column: 3/6;
+    grid-row: 7/8;
+    align-self: center;
 
 }
 
@@ -46,6 +54,7 @@ body,
     text-decoration: none;
     color: rgba(250,235,215,0.3);
     padding: 20px 42px;
+    vertical-align: bottom;
 }
 .next-link a:hover{
     background: url("../img/png/down-arrow.png") no-repeat 0 13px;

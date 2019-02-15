@@ -1,9 +1,13 @@
 /*НАВЫКИ*/
 .content-skills{
-    position: relative;
-    text-align: center;
-    height: 90vh;
-    padding: 10vh 0 0;
+    /*position: relative;*/
+    /*text-align: center;*/
+    /*height: 90vh;*/
+    /*padding: 10vh 0 0;*/
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    height: 100vh;
 }
 
 
@@ -11,34 +15,44 @@
     display: inline-block;
 }
 .skills-words{
-    position: relative;
-    float: left;
-    width: 20vw;
-    margin-left: 10vw;
-    margin-top: 10vh;
-    font-size: 18px;
+    /*position: relative;*/
+    /*float: left;*/
+    /*width: 20vw;*/
+    /*margin-left: 10vw;*/
+    /*margin-top: 10vh;*/
+    /*font-size: 18px;*/
+
+    grid-column: 2/6;
+    grid-row: 6/7;
 }
 .skills-canvas{
-    position: relative;
-    margin: 0 -10vw 0 -20vw;
+    /*position: relative;*/
+    /*margin: 0 -10vw 0 -20vw;*/
+    grid-column: 2/6;
+    grid-row: 2/6;
 
 }
 .skills-info{
-    float: right;
-    white-space: pre;
-    position: relative;
-    width: 20vw;
-    margin: -30px 0 -100px -100px;
-    height: 70vh;
-    border-radius: 5px;
-    font-family: "Fira Code";
-    color: #000000;
-    font-size: 14px;
+    /*float: right;*/
+    /*white-space: pre;*/
+    /*position: relative;*/
+    /*width: 20vw;*/
+    /*margin: -30px 0 -100px -100px;*/
+    /*height: 70vh;*/
+    /*border-radius: 5px;*/
+    /*font-family: "Fira Code";*/
+    /*color: #000000;*/
+    /*font-size: 14px;*/
     text-align: left;
-    padding: 10px;
-    overflow: hidden;
+    /*padding: 10px;*/
+    /*overflow: hidden;*/
+
+    grid-column: 6/8;
+    grid-row: 2/6;
 }
 #myChart{
-    width: 900px !important;
-    height: 450px !important;
+    /*width: 900px !important;*/
+    /*height: 450px !important;*/
+    width: 50vw !important;
+    height: 50vh !important;
 }

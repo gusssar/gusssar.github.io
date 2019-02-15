@@ -74,7 +74,7 @@
           $(this).css('margin-top', '0px');
           $(this).css('margin-top', '-' + (calculatePos) + 'px');
         } else {
-          $(this).addClass('reg');
+          // $(this).addClass('reg');
         }
         $(slidesContainer).css('opacity', '1');
       });
@@ -289,17 +289,17 @@
   };
 
    //preload large imgs
-  var preloadImgs = [];
-  $(document).ready(function() {
-    $(".slide_imgs a").each(function() {
-      var img = new Image();
-      img.src = $(this).attr('href');
-      preloadImgs.push(img);
-    });
-  });
-
-
-  $('.slides').slides();
-
-
+  // var preloadImgs = [];
+  // $(document).ready(function() {
+  //   $(".slide_imgs a").each(function() {
+  //     var img = new Image();
+  //     img.src = $(this).attr('href');
+  //     preloadImgs.push(img);
+  //   });
+  // });
+    $('.slides').slides();
 }(window.jQuery));
+
+/**Изменение выбора изображений в зависимости от размера экрана*/
+// var sliders = document.getElementById("sliders");
+// console.log(sliders);

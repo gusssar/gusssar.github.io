@@ -26,11 +26,6 @@
     animation: 10s linear 2s normal none infinite running fb-anim;
 }
 
-@keyframes fb-anim {
-    from { transform: rotate(0deg) translateX(200%) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(200%) rotate(-360deg); }
-}
-
 .gh-anim{
     animation: 10s linear 4s normal none infinite running fb-anim;
 }
@@ -49,3 +44,7 @@
     animation: 10s linear 10s normal none infinite running fb-anim;
 }
 
+@keyframes fb-anim {
+    from { transform: rotate(0deg) translateX(100%) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(100%) rotate(-360deg); }
+}

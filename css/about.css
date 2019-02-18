@@ -1,67 +1,140 @@
+/*О себе*/
 .content-about{
-    position: relative;
-    text-align: center;
-    height: 90vh;
-    padding: 10vh 0 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    height: 100vh;
 }
-
-
-.about-inline{
-    display: inline-block;
+.mobile{
+     display: block;
+    font-size: 1.5vh;
+ }
+/*Заголовок первый*/
+.about-love-title{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    align-self: end;
+    justify-self: end;
 }
-
-.about-inline h1{
-    font-family: "Gotham-ExtraLight";
+.about-love-title h1{
     font-size: 2.5vh;
 }
-.about-inline h2{
-    font-family: "Gotham-ExtraLight";
+/*заголовок второй*/
+.about-hate-title{
+    grid-column: 6/8;
+    grid-row: 1/2;
+    align-self: end;
+    justify-self: start;
+}
+.about-hate-title h1{
+    font-size: 2.5vh;
+}
+/*наполенение первого*/
+.about-love-context{
+    grid-column: 1/3;
+    grid-row: 2/7;
+    justify-self: end;
+}
+.about-love-context table{
+    height: 66vh;
+    padding-top: 20px;
+}
+/*наполнение второго*/
+.about-hate-context{
+    grid-column: 6/8;
+    grid-row: 2/7;
+    justify-self: start;
+}
+.about-hate-context table{
+    height: 66vh;
+    padding-top: 20px;
+}
+/*График*/
+.about-chart{
+    grid-column: 3/6;
+    grid-row: 2/7;
+}
+.mobile h2{
+    margin: 0;
     font-size: 2vh;
-    margin: 0;
 }
-.about-inline td{
-    font-family: "Gotham-ExtraLight";
-    font-size: 1.4vh;
+/*по размеру экрана*/
+@media all and (max-width: 700px){
+    .mobile{
+        display: none;
+    }
+    .about-love-title{
+        grid-column: 1/4;
+        justify-self: center;
+    }
+    .about-hate-title{
+        grid-column: 5/8;
+        justify-self: center;
+    }
+    .about-inline h1{
+        font-size: 1vh;
+    }
 }
 
-.about-love{
-    text-align: left;
-    position: relative;
-    float: left;
-    width: 20%;
-    height: 90%;
-    margin-right: -10%;
-}
-.about-love h1,
-.about-love h2{
-    color: #52ac62;
-}
 
-.about-chart {
-    position: relative;
-    padding: 5vh 0 0;
-    margin: 0;
-    width: 70%;
-    height: 90%;
-}
-.about-hate{
-    text-align: right;
-    position: relative;
-    float: right;
-    width: 20%;
-    height: 90%;
-    margin-left: -10%;
-}
- .about-hate h1,
- .about-hate h2{
-     color: #be4e45;
- }
 
-table{
-    width: 100%;
-    height: 95%;
-    //border: 1px solid crimson;
-}
+
+/*.about-hate{*/
+    /*grid-column: 6/8;*/
+    /*grid-row: 2/7;*/
+/*}*/
+
+
+/*.about-inline h1{*/
+    /*font-size: 2.5vh;*/
+    /*margin: 0;*/
+/*}*/
+/*.about-inline h2{*/
+    /*font-size: 2vh;*/
+    /*margin: 0;*/
+/*}*/
+/*.about-inline td{*/
+    /*font-size: 1.4vh;*/
+/*}*/
+
+/*.about-love{*/
+    /*text-align: left;*/
+    /*position: relative;*/
+    /*float: left;*/
+    /*width: 20%;*/
+    /*height: 90%;*/
+    /*margin-right: -10%;*/
+/*}*/
+/*.about-love h1,*/
+/*.about-love h2{*/
+    /*color: #52ac62;*/
+/*}*/
+
+/*.about-chart {*/
+    /*position: relative;*/
+    /*padding: 5vh 0 0;*/
+    /*margin: 0;*/
+    /*width: 70%;*/
+    /*height: 90%;*/
+/*}*/
+/*.about-hate{*/
+    /*text-align: right;*/
+    /*position: relative;*/
+    /*float: right;*/
+    /*width: 20%;*/
+    /*height: 90%;*/
+    /*margin-left: -10%;*/
+/*}*/
+ /*.about-hate h1,*/
+ /*.about-hate h2{*/
+     /*color: #be4e45;*/
+ /*}*/
+
+/*table{*/
+    /*width: 100%;*/
+    /*height: 95%;*/
+    /*//border: 1px solid crimson;*/
+/*}*/
 
 /*.content-about-to-contact{*/
     /*position: absolute;*/

@@ -9,8 +9,8 @@
     /*padding: 10vh 0 0;*/
 }
 .contact-body{
-    grid-column: 2/7;
-    grid-row: 2/7;
+    grid-column: 4/5;
+    grid-row: 4/5;
     position: relative;
 }
 
@@ -23,16 +23,24 @@
 /*}*/
 
 .mail {
-    position: absolute;
+    /*position: absolute;*/
+    /*position: relative;*/
     /*top: 30%;*/
     /*left: 30%;*/
     /*width: 40%;*/
-    top: 33vh;
-    left: 32vw;
-    width: 1vh;
+    /*top: 33vh;*/
+    /*left: 32vw;*/
+    /*width: 20vh;*/
+    /*left: 5vh;*/
+    /*z-index: 1;*/
     /*animation: 5s linear 0s normal none infinite running mail;*/
 }
+/*.icons{*/
+    /*position: relative;*/
+    /*margin: 0 auto;*/
+/*}*/
 
+.mail,
 .fb,
 .gh,
 .gh,
@@ -40,13 +48,10 @@
 .tw,
 .vk{
     position: absolute;
-    /*top: 40%;*/
-    /*left: 40%;*/
-    /*width: 20%;*/
-    /*height: 20%;*/
-    top: 33vh;
-    left: 32vw;
-    width: 1vh;
+    top: -3vh;
+    left: -0.4vw;
+    width: 15vw;
+    height: 15vh;
 }
 
 

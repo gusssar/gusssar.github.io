@@ -5,24 +5,25 @@
 
 @keyframes mail-anim {
     0% {
-        transform: rotate(0deg) translate(0,0) scale(1);
+        transform: rotate(0deg) translate(0,0) scale(1.5);
     }
     25%{
-        transform: rotate(30deg)  scale(0.9);
+        transform: rotate(30deg)  scale(1.3);
     }
     50%{
-        transform: rotate(0deg) translate(0,0)  scale(1);
+        transform: rotate(0deg) translate(0,0)  scale(1.5);
     }
     75%{
-        transform: rotate(-30deg)  scale(0.9);
+        transform: rotate(-30deg)  scale(1.3);
     }
     100% {
-        transform: rotate(0deg) translate(0,0)  scale(1);
+        transform: rotate(0deg) translate(0,0)  scale(1.5);
     }
 
 }
 
 .fb-anim{
+    /*animation: продолжительность|временнАя функция|задержка|напрвление|стили|повтор|проигрывание|имя*/
     animation: 10s linear 2s normal none infinite running fb-anim;
 }
 
@@ -44,7 +45,24 @@
     animation: 10s linear 10s normal none infinite running fb-anim;
 }
 
+/*@keyframes fb-anim {*/
+    /*from { transform: rotate(0deg) translateX(15vw)  rotate(0deg); }*/
+    /*to   { transform: rotate(360deg) translateX(15vw) rotate(-360deg); }*/
+/*}*/
+
 @keyframes fb-anim {
-    from { transform: rotate(0deg) translateX(100%) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(100%) rotate(-360deg); }
+    /*0%     { transform:  translateX(20vw) translateY(0); }*/
+    /*25%     { transform:  translateX(0) translateY(20vh); }*/
+    /*50%     { transform:  translateX(-20vw) translateY(0); }*/
+    /*75%     { transform:  translateX(0) translateY(-20vh); }*/
+    /*100%     { transform:  translateX(20vw) translateY(0); }*/
+    0%     { transform:  translateX(0) translateY(-30vh); }
+    20%     { transform:  translateX(20vw) translateY(-5vh); }
+    40%     { transform:  translateX(20vw) translateY(25vh); }
+    60%     { transform:  translateX(-20vw) translateY(25vh); }
+    80%     { transform:  translateX(-20vw) translateY(-5vh); }
+    100%     { transform:  translateX(0) translateY(-30vh); }
+
+
+
 }

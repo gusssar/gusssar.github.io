@@ -37,7 +37,7 @@
 }
 .about-love-context table{
     height: 66vh;
-    padding-top: 20px;
+    padding-top: 2vh;
 }
 /*наполнение второго*/
 .about-hate-context{
@@ -47,13 +47,54 @@
 }
 .about-hate-context table{
     height: 66vh;
-    padding-top: 20px;
+    padding-top: 2vh;
 }
 /*График*/
 .about-chart{
     grid-column: 3/6;
     grid-row: 2/7;
 }
+
+.about-chart-left{
+    display: inline-block;
+    text-align: -webkit-right;
+    text-align: -moz-right;
+}
+.about-chart-left div{
+    background: forestgreen;
+    margin: 1.5vh 0;
+    height: 7.7vh;
+}
+.about-chart-left div:nth-child(1){width: 18vw; height: 1px; margin: 0 0 2vh}
+.about-chart-left div:nth-child(2){width: 17vw;}
+.about-chart-left div:nth-child(3){width: 15vw;}
+.about-chart-left div:nth-child(4){width: 13vw;}
+.about-chart-left div:nth-child(5){width: 8vw;}
+.about-chart-left div:nth-child(6){width: 6vw;}
+.about-chart-left div:nth-child(7){width: 3vw;}
+.about-chart-left div:nth-child(8){width: 1vw;}
+
+.about-chart-right{
+    display: inline-block;
+    text-align: -webkit-left;
+    text-align: -moz-left;
+}
+.about-chart-right div{
+    background: firebrick;
+    margin: 1.5vh 0;
+    height: 7.7vh;
+}
+.about-chart-right div:nth-child(1){width: 18vw; height: 1px; margin: 0 0 2vh}
+.about-chart-right div:nth-child(2){width: 16vw;}
+.about-chart-right div:nth-child(3){width: 15vw;}
+.about-chart-right div:nth-child(4){width: 12vw;}
+.about-chart-right div:nth-child(5){width: 9vw;}
+.about-chart-right div:nth-child(6){width: 5vw;}
+.about-chart-right div:nth-child(7){width: 1vw;}
+.about-chart-right div:nth-child(8){width: 0;}
+
+/**заголовки*/
+
 .mobile h2{
     margin: 0;
     font-size: 2vh;

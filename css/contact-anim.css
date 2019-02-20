@@ -24,45 +24,32 @@
 
 .fb-anim{
     /*animation: продолжительность|временнАя функция|задержка|напрвление|стили|повтор|проигрывание|имя*/
-    animation: 10s linear 2s normal none infinite running fb-anim;
+    animation: 10s linear 2s normal none infinite running anim;
 }
 
 .gh-anim{
-    animation: 10s linear 4s normal none infinite running fb-anim;
+    animation: 10s linear 4s normal none infinite running anim;
 }
 
 .st-anim{
-    animation: 10s linear 6s normal none infinite running fb-anim;
+    animation: 10s linear 6s normal none infinite running anim;
 }
 
 
 .tw-anim{
-    animation: 10s linear 8s normal none infinite running fb-anim;
+    animation: 10s linear 8s normal none infinite running anim;
 }
 
 
 .vk-anim{
-    animation: 10s linear 10s normal none infinite running fb-anim;
+    animation: 10s linear 10s normal none infinite running anim;
 }
 
-/*@keyframes fb-anim {*/
-    /*from { transform: rotate(0deg) translateX(15vw)  rotate(0deg); }*/
-    /*to   { transform: rotate(360deg) translateX(15vw) rotate(-360deg); }*/
-/*}*/
-
-@keyframes fb-anim {
-    /*0%     { transform:  translateX(20vw) translateY(0); }*/
-    /*25%     { transform:  translateX(0) translateY(20vh); }*/
-    /*50%     { transform:  translateX(-20vw) translateY(0); }*/
-    /*75%     { transform:  translateX(0) translateY(-20vh); }*/
-    /*100%     { transform:  translateX(20vw) translateY(0); }*/
+@keyframes anim {
     0%     { transform:  translateX(0) translateY(-30vh); }
     20%     { transform:  translateX(20vw) translateY(-5vh); }
     40%     { transform:  translateX(20vw) translateY(25vh); }
     60%     { transform:  translateX(-20vw) translateY(25vh); }
     80%     { transform:  translateX(-20vw) translateY(-5vh); }
     100%     { transform:  translateX(0) translateY(-30vh); }
-
-
-
 }

@@ -27,10 +27,10 @@
 }
 .code:hover .code-body{
     cursor: text;
-    -webkit-animation: anim 15s ease 0s 1;
+    -webkit-animation: scroll-down  15s ease 0s 1;
 }
 
-@-webkit-keyframes anim {
+@-webkit-keyframes scroll-down {
     0%   {top:0}
     100% {top:-3150px}
 }

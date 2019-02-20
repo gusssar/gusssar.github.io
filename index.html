@@ -20,15 +20,23 @@
     <link rel="stylesheet" href="css/animate.css">
 
     <script type="text/javascript" src="js/meny.js" defer></script>
+        <!--jQuery для работы Viewport Checker'а-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <!--jQuery для работы Графка в навыки-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-    <script src="http://code.jquery.com/jquery.js"></script>
+        <!--не понятно зачем-->
+    <!--<script src="http://code.jquery.com/jquery.js"></script>-->
+        <!--Анимирование блоков при прокрутке-->
     <script src="./js/jquery.viewportchecker.js"></script>
-    <script src="./js/amcharts.js"></script>
-    <script src="./js/serial.js"></script>
-    <script src="./js/alex_theme.js"></script>
+        <!--График о себе-->
+    <!--<script src="./js/amcharts.js"></script>-->
+    <!--<script src="./js/serial.js"></script>-->
+    <!--<script src="./js/alex_theme.js"></script>-->
+        <!--Пермещение при клике на ссылку-->
     <script src="./js/scroll.js"></script>
+        <!--Управление галлереей работ-->
     <script src="./js/slides.js"></script>
+        <!--добавление классов для изменения видимости, анимации и появления страниц-->
     <script src="./js/view-plugin.js"></script>
     <!-- Yandex.Metrika counter -->
     <!--Раскомментить ниже-->
@@ -338,7 +346,7 @@
                     <div class="skills-body skills-canvas">
                         <div></div>
                         <!--отредать канвас для мобилки-->
-                        <!--<canvas id="myChart"></canvas>-->
+                        <canvas id="myChart"></canvas>
                     </div>
                     <div class="skills-body skills-info">
                         <pre>
@@ -382,34 +390,37 @@
                     <div class="row wrap">
                         <div class="slides_thumbs">
                             <div class="slide_imgs" id="sliders">
-                                <a href="img/png/w2560/bulletin-board.jpg">
+                                <a href="img/jpg/w2560/bulletin-board.jpg">
+
                                     <img alt="Доска объявлений"
-                                         src="img/png/w2560/bulletin-board.jpg"
+                                         src="img/jpg/w2560/bulletin-board.jpg"
                                          data-path="https://github.com/gusssar/bulletin-board"
-                                         title='"Доска объявлениий" реализованное с помощью React.js'></a>
-                                <a href="img/png/w2560/djino.jpg">
+                                         title='"Доска объявлениий" реализованное с помощью React.js'>
+                                </a>
+                                <a href="img/jpg/w2560/djino.jpg">
                                     <img alt="Промо-страница"
-                                         src="img/png/w2560/djino.jpg"
+                                         src="img/jpg/w2560/djino.jpg"
                                          data-path="https://github.com/gusssar/DjiniTestSecond"
-                                         title='Промо-странца'></a>
-                                <a href="img/png/w2560/table.jpg">
+                                         title='Промо-странца'>
+                                </a>
+                                <a href="img/jpg/w2560/table.jpg">
                                     <img alt="Табло Шереметьево"
-                                         src="img/png/w2560/table.jpg"
+                                         src="img/jpg/w2560/table.jpg"
                                          data-path="https://github.com/gusssar/table-air-1"
                                          title='Табло Шереметьево реализованное с помощью React.js'></a>
-                                <a href="img/png/w2560/yandex_home.jpg">
+                                <a href="img/jpg/w2560/yandex_home.jpg">
                                     <img alt="Яндекс.Дом"
-                                         src="img/png/w2560/yandex_home.jpg"
+                                         src="img/jpg/w2560/yandex_home.jpg"
                                          data-path="https://github.com/gusssar/entrance_task_2"
                                          title="Макет страницы &quotЯндекс.Дом&quot"></a>
-                                <a href="img/png/w2560/secret_page.jpg">
+                                <a href="img/jpg/w2560/secret_page.jpg">
                                     <img alt="Личный проект"
-                                         src="img/png/w2560/secret_page.jpg"
+                                         src="img/jpg/w2560/secret_page.jpg"
                                          data-path="https://github.com/gusssar"
                                          title='Постоянный личный проект, который я делаю в свое свободное время.'></a>
-                                <a href="img/png/w2560/next_page.jpg">
+                                <a href="img/jpg/w2560/next_page.jpg">
                                     <img alt="Дальше жарче"
-                                         src="img/png/w2560/next_page.jpg"
+                                         src="img/jpg/w2560/next_page.jpg"
                                          data-path="mailto:a.alexeev.mai@yandex.ru"
                                          title='Может я Вам смогу помочь с проектом, обязательно свяжитесь со мной'></a>
                             </div>
@@ -433,14 +444,13 @@
                                 <td class="mobile"><h2>Друзья и Семья</h2>Они делают мою жизнь насыщенной</td>
                                 <td><img src="img/png/friends.png"></td>
                             </tr>
-
-                            <tr>
-                                <td class="mobile"><h2>Фантастика</h2>Безграничная фантазия автора не может не удивлять</td>
-                                <td><img src="img/png/film.png"></td>
-                            </tr>
                             <tr>
                                 <td class="mobile"><h2>Кофe</h2>И никакого сахара и молока!</td>
                                 <td><img src="img/png/coffee.png"></td>
+                            </tr>
+                            <tr>
+                                <td class="mobile"><h2>Фантастика</h2>Ведь это двигатель прогресса</td>
+                                <td><img src="img/png/film.png"></td>
                             </tr>
                             <tr>
                                 <td class="mobile"><h2>Игры</h2>Кто не любит играть?</td>
@@ -460,7 +470,29 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="about-inline about-chart" id="chartdiv"></div>
+                    <!--<div class="about-inline about-chart" id="chartdiv"></div>-->
+                    <div class="about-chart">
+                        <div class="about-chart-left">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="about-chart-right">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
                     <div class="about-hate-title">
                         <h1>Что я ненавижу</h1>
                     </div>
@@ -481,7 +513,7 @@
                             <tr>
 
                                 <td><img src="img/png/bug.png"></td>
-                                <td class="mobile"><h2>Баги</h2>Покажите мне человека, который их любит</td>
+                                <td class="mobile"><h2>Баги</h2>И кто их любит?</td>
                             </tr>
                             <tr>
 
@@ -491,7 +523,7 @@
                             <tr>
 
                                 <td><img src="img/png/profile.png"></td>
-                                <td class="mobile"><h1>Себя</h1>Иногда я ненавижу себя</td>
+                                <td class="mobile"><h2>Себя</h2>Иногда я ненавижу себя</td>
                             </tr>
                             <tr>
                                 <td><img src="img/png/blank.png"></td>

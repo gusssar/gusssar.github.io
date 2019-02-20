@@ -30,6 +30,7 @@
     /*margin: 0 -10vw 0 -20vw;*/
     grid-column: 2/6;
     grid-row: 2/6;
+    position: relative;
 
 }
 .skills-info{
@@ -53,11 +54,16 @@
 #myChart{
     /*width: 900px !important;*/
     /*height: 450px !important;*/
-    width: 50vw !important;
-    height: 50vh !important;
+    position: relative;
+    width: 50vw;
+    height: 50vh;
 }
 @media all and (max-width: 700px){
     .skills-info{
         display: none;
+    }
+    .skills-canvas,
+    .skills-words{
+        grid-column: 2/7;
     }
 }

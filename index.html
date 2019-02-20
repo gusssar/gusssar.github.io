@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width">
     <title>FrontEnd Gusssar</title>
     <link rel="shortcut icon" href="./img/icons/favicon_32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8" />
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 
     <link rel="stylesheet" href="css/index.css">
@@ -19,11 +18,16 @@
     <link rel="stylesheet" href="css/contact-anim.css">
     <link rel="stylesheet" href="css/animate.css">
 
-    <script type="text/javascript" src="js/meny.js" defer></script>
+        <!--JS для хэддера-->
+    <script type="text/javascript" src="js/menu.js" defer></script>
         <!--jQuery для работы Viewport Checker'а-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <!--jQuery для работы Графка в навыки-->
+        <!--jQuery для работы Кругового Графка в навыки-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+            <!--Второй круговой-->
+    <!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
+    <!--<script type="text/javascript" src="js/skills.js"></script>-->
+    <!--</script>-->
         <!--не понятно зачем-->
     <!--<script src="http://code.jquery.com/jquery.js"></script>-->
         <!--Анимирование блоков при прокрутке-->
@@ -344,9 +348,9 @@
                 <div class="content-skills content-view-3 invisible" id="skills">
                     <div class="skills-body skills-words">Самостоятельно приобретённых навыков достаточно для полноценной Frontend-разработки</div>
                     <div class="skills-body skills-canvas">
-                        <div></div>
+                        <!--<div></div>-->
                         <!--отредать канвас для мобилки-->
-                        <canvas id="myChart"></canvas>
+                        <div id="myChart"></div>
                     </div>
                     <div class="skills-body skills-info">
                         <pre>

@@ -43,7 +43,7 @@
     /*border-radius: 5px;*/
     /*font-family: "Fira Code";*/
     /*color: #000000;*/
-    /*font-size: 14px;*/
+    font-size: 1.5vh;
     text-align: left;
     /*padding: 10px;*/
     /*overflow: hidden;*/
@@ -51,13 +51,90 @@
     grid-column: 6/8;
     grid-row: 2/6;
 }
-#myChart{
-    /*width: 900px !important;*/
-    /*height: 450px !important;*/
-    position: relative;
-    width: 50vw;
+
+/*Бриллиант*/
+.diamond{
     height: 50vh;
+    width: 50vw;
 }
+
+
+/*Проявление текста при наведении*/
+.diamond:hover #a6jVNKt85j{
+    animation: 3s ease-out 0s normal none opacity-on;
+    animation-fill-mode: forwards;
+}
+.diamond:hover #bHGpCDjWM{
+    animation: 3s ease-out 0s normal none opacity-on;
+    animation-fill-mode: forwards;
+}
+.diamond:hover #jpD6ve0FX{
+    animation: 3s ease-out 0s normal none opacity-on;
+    animation-fill-mode: forwards;
+}
+.diamond:hover #bP2DrPaFZ{
+    animation: 3s ease-out 0s normal none opacity-on;
+    animation-fill-mode: forwards;
+}
+.diamond:hover #b98MRMWJBZ{
+    animation: 3s ease-out 0s normal none opacity-on;
+    animation-fill-mode: forwards;
+}
+.diamond:hover #flxq0fEPN{
+    animation: 3s ease-out 0s normal none opacity-on;
+    animation-fill-mode: forwards;
+}
+.diamond:hover #kcUsZoh0C{
+    animation: 3s ease-out 0s normal none opacity-on;
+    animation-fill-mode: forwards;
+}
+.diamond:hover #c2xoN7NE7w{
+    animation: 3s ease-out 0s normal none opacity-on;
+    animation-fill-mode: forwards;
+}
+
+/*Затухание брилиана при наведении*/
+.diamond:hover #down_1{
+    animation: 3s ease-in 0s normal none opacity-off;
+    animation-fill-mode: forwards;
+}
+.diamond:hover #down_2{
+    animation: 3s ease-in 0s normal none opacity-off;
+    animation-fill-mode: forwards;
+}
+.diamond:hover #down_3{
+    animation: 3s ease-in 0s normal none opacity-off;
+    animation-fill-mode: forwards;
+}
+.diamond:hover #up_1{
+    animation: 3s ease-in 0s normal none opacity-off;
+    animation-fill-mode: forwards;
+}
+.diamond:hover #up_2{
+    animation: 3s ease-in 0s normal none opacity-off;
+    animation-fill-mode: forwards;
+}
+.diamond:hover #up_3{
+    animation: 3s ease-in 0s normal none opacity-off;
+    animation-fill-mode: forwards;
+}
+.diamond:hover #up_4{
+    animation: 3s ease-in 0s normal none opacity-off;
+    animation-fill-mode: forwards;
+}
+.diamond:hover #up_5{
+    animation: 3s ease-in 0s normal none opacity-off;
+    animation-fill-mode: forwards;
+}
+@keyframes opacity-on {
+    0%   {fill-opacity: 0}
+    100% {fill-opacity: 1}
+}
+@keyframes opacity-off {
+    0%   {opacity: 1}
+    100% {opacity: 0.2}
+}
+
 @media all and (max-width: 700px){
     .skills-info{
         display: none;

@@ -1,53 +1,27 @@
 /*НАВЫКИ*/
 .content-skills{
-    /*position: relative;*/
-    /*text-align: center;*/
-    /*height: 90vh;*/
-    /*padding: 10vh 0 0;*/
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(7, 1fr);
     height: 100vh;
 }
 
-
 .skills-body{
     display: inline-block;
 }
 .skills-words{
-    /*position: relative;*/
-    /*float: left;*/
-    /*width: 20vw;*/
-    /*margin-left: 10vw;*/
-    /*margin-top: 10vh;*/
-    /*font-size: 18px;*/
-
     grid-column: 2/6;
     grid-row: 6/7;
 }
 .skills-canvas{
-    /*position: relative;*/
-    /*margin: 0 -10vw 0 -20vw;*/
     grid-column: 2/6;
     grid-row: 2/6;
     position: relative;
 
 }
 .skills-info{
-    /*float: right;*/
-    /*white-space: pre;*/
-    /*position: relative;*/
-    /*width: 20vw;*/
-    /*margin: -30px 0 -100px -100px;*/
-    /*height: 70vh;*/
-    /*border-radius: 5px;*/
-    /*font-family: "Fira Code";*/
-    /*color: #000000;*/
     font-size: 1.5vh;
     text-align: left;
-    /*padding: 10px;*/
-    /*overflow: hidden;*/
-
     grid-column: 6/8;
     grid-row: 2/6;
 }
@@ -58,88 +32,94 @@
     width: 50vw;
 }
 
-
 /*Проявление текста при наведении*/
 .diamond:hover #a6jVNKt85j{
-    animation: 3s ease-out 0s normal none opacity-on;
-    animation-fill-mode: forwards;
+    animation: 3s ease-out 0s normal forwards opacity-on;
+    -moz-animation: 3s ease-out 0s normal forwards opacity-on;
 }
 .diamond:hover #bHGpCDjWM{
-    animation: 3s ease-out 0s normal none opacity-on;
-    animation-fill-mode: forwards;
+    animation: 3s ease-out 0s normal forwards opacity-on;
+    -moz-animation: 3s ease-out 0s normal forwards opacity-on;
 }
 .diamond:hover #jpD6ve0FX{
-    animation: 3s ease-out 0s normal none opacity-on;
-    animation-fill-mode: forwards;
+    animation: 3s ease-out 0s normal forwards opacity-on;
+    -moz-animation: 3s ease-out 0s normal forwards opacity-on;
 }
 .diamond:hover #bP2DrPaFZ{
-    animation: 3s ease-out 0s normal none opacity-on;
-    animation-fill-mode: forwards;
+    animation: 3s ease-out 0s normal forwards opacity-on;
+    -moz-animation: 3s ease-out 0s normal forwards opacity-on;
 }
 .diamond:hover #b98MRMWJBZ{
-    animation: 3s ease-out 0s normal none opacity-on;
-    animation-fill-mode: forwards;
+    animation: 3s ease-out 0s normal forwards opacity-on;
+    -moz-animation: 3s ease-out 0s normal forwards opacity-on;
 }
 .diamond:hover #flxq0fEPN{
-    animation: 3s ease-out 0s normal none opacity-on;
-    animation-fill-mode: forwards;
+    animation: 3s ease-out 0s normal forwards opacity-on;
+    -moz-animation: 3s ease-out 0s normal forwards opacity-on;
 }
 .diamond:hover #kcUsZoh0C{
-    animation: 3s ease-out 0s normal none opacity-on;
-    animation-fill-mode: forwards;
+    animation: 3s ease-out 0s normal forwards opacity-on;
+    -moz-animation: 3s ease-out 0s normal forwards opacity-on;
 }
 .diamond:hover #c2xoN7NE7w{
-    animation: 3s ease-out 0s normal none opacity-on;
-    animation-fill-mode: forwards;
+    animation: 3s ease-out 0s normal forwards opacity-on;
+    -moz-animation: 3s ease-out 0s normal forwards opacity-on;
 }
 
 /*Затухание брилиана при наведении*/
 .diamond:hover #down_1{
-    animation: 3s ease-in 0s normal none opacity-off;
-    animation-fill-mode: forwards;
+    animation: 3s ease-in 0s normal forwards opacity-off;
+    -moz-animation: 3s ease-in 0s normal forwards opacity-off;
 }
 .diamond:hover #down_2{
-    animation: 3s ease-in 0s normal none opacity-off;
-    animation-fill-mode: forwards;
+    animation: 3s ease-in 0s normal forwards opacity-off;
+    -moz-animation: 3s ease-in 0s normal forwards opacity-off;
 }
 .diamond:hover #down_3{
-    animation: 3s ease-in 0s normal none opacity-off;
-    animation-fill-mode: forwards;
+    animation: 3s ease-in 0s normal forwards opacity-off;
+    -moz-animation: 3s ease-in 0s normal forwards opacity-off;
 }
 .diamond:hover #up_1{
-    animation: 3s ease-in 0s normal none opacity-off;
-    animation-fill-mode: forwards;
+    animation: 3s ease-in 0s normal forwards opacity-off;
+    -moz-animation: 3s ease-in 0s normal forwards opacity-off;
 }
 .diamond:hover #up_2{
-    animation: 3s ease-in 0s normal none opacity-off;
-    animation-fill-mode: forwards;
+    animation: 3s ease-in 0s normal forwards opacity-off;
+    -moz-animation: 3s ease-in 0s normal forwards opacity-off;
 }
 .diamond:hover #up_3{
-    animation: 3s ease-in 0s normal none opacity-off;
-    animation-fill-mode: forwards;
+    animation: 3s ease-in 0s normal forwards opacity-off;
+    -moz-animation: 3s ease-in 0s normal forwards opacity-off;
 }
 .diamond:hover #up_4{
-    animation: 3s ease-in 0s normal none opacity-off;
-    animation-fill-mode: forwards;
+    animation: 3s ease-in 0s normal forwards opacity-off;
+    -moz-animation: 3s ease-in 0s normal forwards opacity-off;
 }
 .diamond:hover #up_5{
-    animation: 3s ease-in 0s normal none opacity-off;
-    animation-fill-mode: forwards;
+    animation: 3s ease-in 0s normal forwards opacity-off;
+    -moz-animation: 3s ease-in 0s normal forwards opacity-off;
 }
-@keyframes opacity-on {
-    0%   {fill-opacity: 0}
-    100% {fill-opacity: 1}
-}
-@keyframes opacity-off {
-    0%   {opacity: 1}
-    100% {opacity: 0.2}
-}
+
+@-webkit-keyframes opacity-on  {0%   {opacity:0; fill-opacity: 0} 100% {opacity:1;   fill-opacity: 1}}
+@-moz-keyframes opacity-on  {0%   {opacity:0; fill-opacity: 0} 100% {opacity:1;   fill-opacity: 1}}
+@-o-keyframes opacity-on  {0%   {opacity:0; fill-opacity: 0} 100% {opacity:1;   fill-opacity: 1}}
+@keyframes opacity-on  {0%   {opacity:0; fill-opacity: 0} 100% {opacity:1;   fill-opacity: 1}}
+
+@-webkit-keyframes opacity-off {0%   {opacity:1} 100% {opacity:0.2}}
+@-moz-keyframes opacity-off {0%   {opacity:1} 100% {opacity:0.2}}
+@-o-keyframes opacity-off {0%   {opacity:1} 100% {opacity:0.2}}
+@keyframes opacity-off {0%   {opacity:1} 100% {opacity:0.2}}
 
 @media all and (max-width: 700px){
     .skills-info{
         display: none;
     }
-    .skills-canvas,
+    .skills-canvas{
+        grid-column: 1/8;
+    }
+    .diamond{
+        width: 70vw;
+    }
     .skills-words{
         grid-column: 2/7;
     }

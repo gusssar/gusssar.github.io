@@ -32,7 +32,7 @@
     position:relative;
     margin-bottom: 20px;}
 .slide_view {
-    /*max-width:70%;*/
+    max-width:80%;
     margin:0 auto;
     background:#373737;
     /*max-height:600px;*/
@@ -46,7 +46,7 @@
 .slide_image_title {
     text-align:center;
     display:block;
-    /*width:70%;*/
+    width:80%;
     margin:0 auto;
     background:#F0F0F0;
     opacity: 0.3;
@@ -115,6 +115,12 @@
     .slide_imgs a img{
         width:23%;
         margin:.5%
+    }
+    .slide_image_title{
+        width: 100%;
+    }
+    .slide_view{
+        max-width: 100%;
     }
 }
 

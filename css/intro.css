@@ -30,13 +30,13 @@
     -webkit-animation: scroll-down  15s ease 0s 1;
     -moz-animation: scroll-down  15s ease 0s 1;
     -o-animation: scroll-down  15s ease 0s 1;
-    animation: scroll-down  15s ease 0s 1;
+    /*animation: scroll-down  15s ease 0s 1;*/
 }
 
 @-webkit-keyframes scroll-down {0%{top:0} 100%{top:-3150px}}
 @-moz-keyframes scroll-down {0%{top:0} 100%{top:-3150px}}
 @-o-keyframes scroll-down {0%{top:0} 100%{top:-3150px}}
-@keyframes scroll-down {0%{top:0} 100%{top:-3150px}}
+/*@keyframes scroll-down {0%{top:0} 100%{top:-3150px}}*/
 
 
 /*Парящий куб*/
@@ -81,21 +81,22 @@
     -o-animation-timing-function: linear;
     -o-animation-duration: 12s;
 
-    transform-style: preserve-3d;
-    transform-origin:50%;
-    animation-name: cycle_all;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 12s;
+    /*transform-style: preserve-3d;*/
+    /*transform-origin:50%;*/
+    /*animation-name: cycle_all;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-timing-function: linear;*/
+    /*animation-duration: 12s;*/
 }
 .boxes {
     position:absolute;
+    transform-style: preserve-3d;
     top:0;
     left:0;
     -webkit-transition: all 1s ease-in-out; /*переходное состояние: для всех|время|метод*/
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    /*transition: all 1s ease-in-out;*/
  }
 .aa {
     background: #363636;
@@ -128,12 +129,12 @@
     -o-animation-duration: 1.4s;
     -o-transition:all 0.8s ease-in-out;
 
-    box-shadow: rgba(0,0,0,0.08) 1px 1px 2px 3px;
-    animation-name: cycle_a;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 1.4s;
-    transition:all 0.8s ease-in-out;
+    /*box-shadow: rgba(0,0,0,0.08) 1px 1px 2px 3px;*/
+    /*animation-name: cycle_a;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-timing-function: linear;*/
+    /*animation-duration: 1.4s;*/
+    /*transition:all 0.8s ease-in-out;*/
 }
 .tags {
     position: relative;
@@ -154,8 +155,8 @@
     -o-transition: all .5s ease-out;
     -o-transition-delay: 0.30s;
 
-    transition: all .5s ease-out;
-    transition-delay: 0.30s;
+    /*transition: all .5s ease-out;*/
+    /*transition-delay: 0.30s;*/
 }
 .tag {
     position:absolute;
@@ -177,28 +178,28 @@
     -o-animation-timing-function: linear;
     -o-animation-duration: 3.1s;
 
-    animation-name: tag;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 3.1s;
+    /*animation-name: tag;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-timing-function: linear;*/
+    /*animation-duration: 3.1s;*/
 }
 .tag:nth-child(1) {
     -webkit-animation-delay:0s;
     -moz-animation-delay:0s;
     -o-animation-delay:0s;
-    animation-delay:0s;
+    /*animation-delay:0s;*/
 }
 .tag:nth-child(2) {
     -webkit-animation-delay:.5s;
     -moz-animation-delay:.5s;
     -o-animation-delay:.5s;
-    animation-delay:.5s;
+    /*animation-delay:.5s;*/
 }
 .tag:nth-child(3) {
     -webkit-animation-delay:1s;
     -moz-animation-delay:1s;
     -o-animation-delay:1s;
-    animation-delay:1s;
+    /*animation-delay:1s;*/
 }
 .tag:nth-child(4) {
     -webkit-animation-delay:1.5s;
@@ -210,14 +211,15 @@
     -webkit-animation-delay:2s;
     -moz-animation-delay:2s;
     -o-animation-delay:2s;
-    animation-delay:2s;
+    /*animation-delay:2s;*/
 }
 .tag:nth-child(6) {
     -webkit-animation-delay:2.5s;
     -moz-animation-delay:2.5s;
     -o-animation-delay:2.5s;
-    animation-delay:2.5s;
+    /*animation-delay:2.5s;*/
 }
+
 .zero,
 .one,
 .two,
@@ -237,7 +239,7 @@
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    /*transition: all 1s ease-in-out;*/
 }
 
 
@@ -246,44 +248,43 @@
     -webkit-transform: rotateX(90deg) translateZ(70px);
     -moz-transform: rotateX(90deg) translateZ(70px);
     -o-transform: rotateX(90deg) translateZ(70px);
-    transform: rotateX(90deg) translateZ(70px);
+    /*transform: rotateX(90deg) translateZ(70px);*/
 }
 .one{
     background: #a30000;
     -webkit-transform: rotateX(90deg) translateZ(-70px);
     -moz-transform: rotateX(90deg) translateZ(-70px);
     -o-transform: rotateX(90deg) translateZ(-70px);
-    transform: rotateX(90deg) translateZ(-70px);
+    /*transform: rotateX(90deg) translateZ(-70px);*/
 }
 .two{
     background: #000000;
     -webkit-transform: rotateY(0deg) translateZ(70px);
     -moz-transform: rotateY(0deg) translateZ(70px);
     -o-transform: rotateY(0deg) translateZ(70px);
-    transform: rotateY(0deg) translateZ(70px);
+    /*transform: rotateY(0deg) translateZ(70px);*/
 }
 .three{
     background:purple;
     -webkit-transform: rotateY(90deg) translateZ(70px);
     -moz-transform: rotateY(90deg) translateZ(70px);
     -o-transform: rotateY(90deg) translateZ(70px);
-    transform: rotateY(90deg) translateZ(70px);
+    /*transform: rotateY(90deg) translateZ(70px);*/
 }
 .four{
     background:blue;
     -webkit-transform: rotateY(-180deg) translateZ(70px);
     -moz-transform: rotateY(-180deg) translateZ(70px);
     -o-transform: rotateY(-180deg) translateZ(70px);
-    transform: rotateY(-180deg) translateZ(70px);
+    /*transform: rotateY(-180deg) translateZ(70px);*/
 }
 .five{
     background:darkblue;
     -webkit-transform: rotateY(270deg) translateZ(70px);
-    -moz-transform: rotateY(270deg) translateZ(70px);
+    -moz-transform: rotateY(-90deg) translateZ(70px);
     -o-transform: rotateY(270deg) translateZ(70px);
-    transform: rotateY(270deg) translateZ(70px);
 }
-
+/*Ниже хорошо*/
 
 .logo:hover .aa {
     top:-250px;
@@ -308,47 +309,39 @@
     -webkit-transform: rotateX(90deg) translateZ(-70px);
     -moz-transform: rotateX(90deg) translateZ(-70px);
     -o-transform: rotateX(90deg) translateZ(-70px);
-    transform: rotateX(90deg) translateZ(-70px);
 }
 .logo:hover .two{
     -webkit-transform: rotateX(90deg) rotateY(0deg) translateY(140px) translateZ(-70px);
     -moz-transform: rotateX(90deg) rotateY(0deg) translateY(140px) translateZ(-70px);
     -o-transform: rotateX(90deg) rotateY(0deg) translateY(140px) translateZ(-70px);
-    transform: rotateX(90deg) rotateY(0deg) translateY(140px) translateZ(-70px);
 }
 .logo:hover .three{
     -webkit-transform: rotateZ(270deg) rotateY(90deg) translateY(140px) translateZ(-70px);
-    -moz-transform: rotateZ(270deg) rotateY(90deg) translateY(140px) translateZ(-70px);
+    -moz-transform: rotateZ(-90deg) rotateY(90deg) translateY(140px) translateZ(-70px);
     -o-transform: rotateZ(270deg) rotateY(90deg) translateY(140px) translateZ(-70px);
-    transform: rotateZ(270deg) rotateY(90deg) translateY(140px) translateZ(-70px);
 }
 .logo:hover .four{
     -webkit-transform: rotateX(270deg) rotateY(-180deg) translateY(140px) translateZ(-70px);
     -moz-transform: rotateX(270deg) rotateY(-180deg) translateY(140px) translateZ(-70px);
     -o-transform: rotateX(270deg) rotateY(-180deg) translateY(140px) translateZ(-70px);
-    transform: rotateX(270deg) rotateY(-180deg) translateY(140px) translateZ(-70px);
 }
 .logo:hover .five{
     -webkit-transform: rotateZ(90deg) rotateY(270deg) translateY(140px) translateZ(-70px);
-    -moz-transform: rotateZ(90deg) rotateY(270deg) translateY(140px) translateZ(-70px);
+    -moz-transform: rotateX(90deg) rotateZ(90deg)  translateY(140px) translateZ(-70px);
     -o-transform: rotateZ(90deg) rotateY(270deg) translateY(140px) translateZ(-70px);
-    transform: rotateZ(90deg) rotateY(270deg) translateY(140px) translateZ(-70px);
 }
 
 @-webkit-keyframes cycle_all {from {-webkit-transform: rotateX(-25deg) rotateY(0deg)} to {-webkit-transform: rotateX(-25deg) rotateY(360deg)}}
 @-moz-keyframes    cycle_all {from {-moz-transform:    rotateX(-25deg) rotateY(0deg)} to {-moz-transform:    rotateX(-25deg) rotateY(360deg)}}
 @-o-keyframes      cycle_all {from {-o-transform:      rotateX(-25deg) rotateY(0deg)} to {-o-transform:      rotateX(-25deg) rotateY(360deg)}}
-@keyframes         cycle_all {from {transform:         rotateX(-25deg) rotateY(0deg)} to {transform:         rotateX(-25deg) rotateY(360deg)}}
 
 @-webkit-keyframes cycle_aa {from {-webkit-transform: rotateY(0deg)} to {-webkit-transform: rotateY(-360deg)}}
    @-moz-keyframes cycle_aa {from {-moz-transform:    rotateY(0deg)} to {-moz-transform:    rotateY(-360deg)}}
      @-o-keyframes cycle_aa {from {-o-transform:      rotateY(0deg)} to {-o-transform:      rotateY(-360deg)}}
-        @keyframes cycle_aa {from {transform:         rotateY(0deg)} to {transform:         rotateY(-360deg)}}
 
 @-webkit-keyframes  tag {0%{opacity:1} 100%{opacity:0; top:-140px}}
    @-moz-keyframes  tag {0%{opacity:1} 100%{opacity:0; top:-140px}}
      @-o-keyframes  tag {0%{opacity:1} 100%{opacity:0; top:-140px}}
-        @keyframes  tag {0%{opacity:1} 100%{opacity:0; top:-140px}}
 
 @media all and (max-width: 700px){
     .some-words,

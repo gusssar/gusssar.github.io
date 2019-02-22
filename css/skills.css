@@ -30,6 +30,7 @@
 .diamond{
     height: 50vh;
     width: 50vw;
+    cursor: default;
 }
 
 /*Проявление текста при наведении*/

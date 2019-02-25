@@ -32,74 +32,39 @@
     width: 50vw;
     cursor: default;
 }
+/*Стилёк для тела бриллианта*/
+#down_1{fill: #baffcb;}
+#down_2{fill: #b9f2ff}
+#down_3{fill: #bacbff}
+#up_1{fill: #71c41d}
+#up_2{fill: #4cb6d9}
+#up_3{fill: #d9d94c}
+#up_4{fill: #924cd9}
+#up_5{fill: #c41d9b}
+
+/*Стилёк для гравировки бриллианта*/
+.diamond-txt{
+    opacity: 0;
+    font-family: "PT Serif", sans-serif;
+}
+.diamond-txt tspan{
+    alignment-baseline:before-edge;
+    dominant-baseline:text-before-edge;
+    text-anchor: start;
+}
 
 /*Проявление текста при наведении*/
-.diamond:hover #a6jVNKt85j{
-    animation: 3s ease-out 0s normal forwards opacity-on;
-    -moz-animation: 3s ease-out 0s normal forwards opacity-on;
-}
-.diamond:hover #bHGpCDjWM{
-    animation: 3s ease-out 0s normal forwards opacity-on;
-    -moz-animation: 3s ease-out 0s normal forwards opacity-on;
-}
-.diamond:hover #jpD6ve0FX{
-    animation: 3s ease-out 0s normal forwards opacity-on;
-    -moz-animation: 3s ease-out 0s normal forwards opacity-on;
-}
-.diamond:hover #bP2DrPaFZ{
-    animation: 3s ease-out 0s normal forwards opacity-on;
-    -moz-animation: 3s ease-out 0s normal forwards opacity-on;
-}
-.diamond:hover #b98MRMWJBZ{
-    animation: 3s ease-out 0s normal forwards opacity-on;
-    -moz-animation: 3s ease-out 0s normal forwards opacity-on;
-}
-.diamond:hover #flxq0fEPN{
-    animation: 3s ease-out 0s normal forwards opacity-on;
-    -moz-animation: 3s ease-out 0s normal forwards opacity-on;
-}
-.diamond:hover #kcUsZoh0C{
-    animation: 3s ease-out 0s normal forwards opacity-on;
-    -moz-animation: 3s ease-out 0s normal forwards opacity-on;
-}
-.diamond:hover #c2xoN7NE7w{
+.diamond:hover .diamond-txt{
     animation: 3s ease-out 0s normal forwards opacity-on;
     -moz-animation: 3s ease-out 0s normal forwards opacity-on;
 }
 
 /*Затухание брилиана при наведении*/
-.diamond:hover #down_1{
+.diamond:hover .diamond-body{
     animation: 3s ease-in 0s normal forwards opacity-off;
     -moz-animation: 3s ease-in 0s normal forwards opacity-off;
 }
-.diamond:hover #down_2{
-    animation: 3s ease-in 0s normal forwards opacity-off;
-    -moz-animation: 3s ease-in 0s normal forwards opacity-off;
-}
-.diamond:hover #down_3{
-    animation: 3s ease-in 0s normal forwards opacity-off;
-    -moz-animation: 3s ease-in 0s normal forwards opacity-off;
-}
-.diamond:hover #up_1{
-    animation: 3s ease-in 0s normal forwards opacity-off;
-    -moz-animation: 3s ease-in 0s normal forwards opacity-off;
-}
-.diamond:hover #up_2{
-    animation: 3s ease-in 0s normal forwards opacity-off;
-    -moz-animation: 3s ease-in 0s normal forwards opacity-off;
-}
-.diamond:hover #up_3{
-    animation: 3s ease-in 0s normal forwards opacity-off;
-    -moz-animation: 3s ease-in 0s normal forwards opacity-off;
-}
-.diamond:hover #up_4{
-    animation: 3s ease-in 0s normal forwards opacity-off;
-    -moz-animation: 3s ease-in 0s normal forwards opacity-off;
-}
-.diamond:hover #up_5{
-    animation: 3s ease-in 0s normal forwards opacity-off;
-    -moz-animation: 3s ease-in 0s normal forwards opacity-off;
-}
+
 
 @-webkit-keyframes opacity-on  {0%   {opacity:0; fill-opacity: 0} 100% {opacity:1;   fill-opacity: 1}}
 @-moz-keyframes opacity-on  {0%   {opacity:0; fill-opacity: 0} 100% {opacity:1;   fill-opacity: 1}}

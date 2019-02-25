@@ -62,11 +62,11 @@
 }
 .about-chart-left div{
     background: forestgreen;
-    margin: 1.5vh 0;
-    height: 7.7vh;
+    margin: 3.4vh 0;
+    height: 5.7vh;
 }
-.about-chart-left div:nth-child(1){width: 18vw; height: 1px; margin: 0 0 2vh}
-.about-chart-left div:nth-child(2){width: 17vw;}
+.about-chart-left div:nth-child(1){width: 18vw; height: 1px; margin: 0}
+.about-chart-left div:nth-child(2){width: 17vw; margin-top: 1.5vh}
 .about-chart-left div:nth-child(3){width: 15vw;}
 .about-chart-left div:nth-child(4){width: 13vw;}
 .about-chart-left div:nth-child(5){width: 8vw;}
@@ -81,11 +81,11 @@
 }
 .about-chart-right div{
     background: firebrick;
-    margin: 1.5vh 0;
-    height: 7.7vh;
+    margin: 3.4vh 0;
+    height: 5.7vh;
 }
-.about-chart-right div:nth-child(1){width: 18vw; height: 1px; margin: 0 0 2vh}
-.about-chart-right div:nth-child(2){width: 16vw;}
+.about-chart-right div:nth-child(1){width: 18vw; height: 1px; margin: 0}
+.about-chart-right div:nth-child(2){width: 16vw; margin-top: 1.5vh}
 .about-chart-right div:nth-child(3){width: 15vw;}
 .about-chart-right div:nth-child(4){width: 12vw;}
 .about-chart-right div:nth-child(5){width: 9vw;}
@@ -94,11 +94,66 @@
 .about-chart-right div:nth-child(8){width: 0;}
 
 /**заголовки*/
-
 .mobile h2{
     margin: 0;
     font-size: 2vh;
 }
+
+/**Изображения*/
+.about_pic{
+    height: 32px;
+    width: 32px;
+    background: url("../img/png/sprite.png") no-repeat;
+}
+#about-friends{
+    background-position: 0 0;
+}
+#about-coffee{
+    background-position: -32px 0;
+}
+#about-film{
+    background-position: -64px 0;
+}
+#about-console{
+    background-position: -96px 0;
+}
+#about-necklace{
+    background-position: 0 -32px;
+}
+#about-pc{
+    background-position: -32px -32px;
+}
+#about-profile-1{
+    background-position:  -64px -32px;
+}
+#about-speech{
+    background-position: -96px -32px;
+}
+#about-bubble{
+    background-position: 0 -64px;
+}
+#about-frown{
+    background-position: -32px -64px;
+}
+#about-bug{
+    background-position: -64px -65px;
+}
+#about-smug{
+    background-position: -96px -64px;
+}
+#about-profile-2{
+    background-position: -64px -32px;
+}
+#about-blank{
+    background-position: -96px -96px;
+}
+
+/*Центрирование*/
+
+.about-inline table tr{
+    vertical-align: top;
+}
+
 /*по размеру экрана*/
 @media all and (max-width: 700px){
     .mobile{

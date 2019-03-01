@@ -192,7 +192,7 @@
     /*animation-delay:0s;*/
 }
 .tag:nth-child(2) {
-    -webkit-animation-delay:.5s;
+    -webkit-animation-delay:0.5s;
     -moz-animation-delay:.5s;
     -o-animation-delay:.5s;
     /*animation-delay:.5s;*/
@@ -207,7 +207,7 @@
     -webkit-animation-delay:1.5s;
     -moz-animation-delay:1.5s;
     -o-animation-delay:1.5s;
-    animation-delay:1.5s;
+    /*animation-delay:1.5s;*/
 }
 .tag:nth-child(5) {
     -webkit-animation-delay:2s;
@@ -341,7 +341,7 @@
    @-moz-keyframes cycle_aa {from {-moz-transform:    rotateY(0deg)} to {-moz-transform:    rotateY(-360deg)}}
      @-o-keyframes cycle_aa {from {-o-transform:      rotateY(0deg)} to {-o-transform:      rotateY(-360deg)}}
 
-@-webkit-keyframes  tag {0%{opacity:1} 100%{opacity:0; top:-140px}}
+@-webkit-keyframes  tag {from{opacity:1} to{opacity:0; top:-140px}}
    @-moz-keyframes  tag {0%{opacity:1} 100%{opacity:0; top:-140px}}
      @-o-keyframes  tag {0%{opacity:1} 100%{opacity:0; top:-140px}}
 

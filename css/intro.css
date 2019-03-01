@@ -24,18 +24,20 @@
 }
 .code-body{
     position: relative;
+    top:0;
+    transition: top 5s;
 }
 .code:hover .code-body{
     cursor: text;
-    -webkit-animation: scroll-down  15s ease 0s 1;
-    -moz-animation: scroll-down  15s ease 0s 1;
-    -o-animation: scroll-down  15s ease 0s 1;
-    /*animation: scroll-down  15s ease 0s 1;*/
+    top: -3000px;
+    /*-webkit-animation: scroll-down  15s ease 0s 1;*/
+    /*-moz-animation: scroll-down  15s ease 0s 1;*/
+    /*-o-animation: scroll-down  15s ease 0s 1;*/
 }
 
-@-webkit-keyframes scroll-down {0%{top:0} 100%{top:-3150px}}
-@-moz-keyframes scroll-down {0%{top:0} 100%{top:-3150px}}
-@-o-keyframes scroll-down {0%{top:0} 100%{top:-3150px}}
+/*@-webkit-keyframes scroll-down {0%{top:0} 100%{top:-3150px}}*/
+/*@-moz-keyframes scroll-down {0%{top:0} 100%{top:-3150px}}*/
+/*@-o-keyframes scroll-down {0%{top:0} 100%{top:-3150px}}*/
 /*@keyframes scroll-down {0%{top:0} 100%{top:-3150px}}*/
 
 

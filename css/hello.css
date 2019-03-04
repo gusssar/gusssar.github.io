@@ -38,23 +38,6 @@
     font-size: 2.8vw;
     padding: 5px;
 }
-/*теперь всё в intro css*/
-/*.content-hello-to-intro{*/
-    /*grid-column: 3/6;*/
-    /*grid-row: 7/8;*/
-    /*align-self: center;*/
-/*}*/
-/*.content-hello-to-intro a{*/
-    /*text-decoration: none;*/
-    /*color: rgba(250,235,215,0.3);*/
-    /*padding: 20px 42px;*/
-    /*vertical-align: bottom;*/
-/*}*/
-/*.content-hello-to-intro a:hover{*/
-    /*background: url("../img/png/down-arrow.png") no-repeat 0 13px;*/
-    /*color: rgba(250,235,215,1);*/
-/*}*/
-
 @media all and (max-width: 700px){
 
     #hello{

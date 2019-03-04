@@ -8,7 +8,6 @@ let nav_skills   = document.getElementById('id-nav-skills-1');
 let nav_works   = document.getElementById('id-nav-works-1');
 let nav_about = document.getElementById('id-nav-about-1');
 let nav_contact = document.getElementById('id-nav-contact-1');
-// let _content_body = document.getElementById('content-body');
 
 let hide_menu = () => {
     header[0].style.display = 'none';
@@ -21,19 +20,6 @@ show_menu.onclick =  () => {
     show_menu.style.display = "none";
     fake_glass.style.display = 'block'
 };
-
-let a;
-if (navigator.userAgent.search(/Safari/) > 0) {a = 'Safari'};
-if (navigator.userAgent.search(/Firefox/) > 0) {a = 'MozillaFirefox'};
-if (navigator.userAgent.search(/MSIE/) > 0 || navigator.userAgent.search(/NET CLR /) > 0) {a = 'Internet Explorer'};
-if (navigator.userAgent.search(/Chrome/) > 0) {a = 'Google Chrome'};
-if (navigator.userAgent.search(/YaBrowser/) > 0) {a = 'Яндекс браузер'};
-if (navigator.userAgent.search(/OPR/) > 0) {a = 'Opera'};
-if (navigator.userAgent.search(/Konqueror/) > 0) {a = 'Konqueror'};
-if (navigator.userAgent.search(/Iceweasel/) > 0) {a = 'Debian Iceweasel'};
-if (navigator.userAgent.search(/SeaMonkey/) > 0) {a = 'SeaMonkey'};
-if (navigator.userAgent.search(/Edge/) > 0) {a = 'Microsoft Edge'};
-console.log(a);
 
 close_menu.onclick = () => {hide_menu()};
 nav_hello.onclick = () => {hide_menu()};

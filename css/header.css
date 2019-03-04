@@ -44,9 +44,6 @@ header ul{
     left: 20px;
     z-index: 3;
 }
-/*#closeMenu{*/
-    /*display: none;*/
-/*}*/
 #fake-glass{
     display: none;
     position: fixed;

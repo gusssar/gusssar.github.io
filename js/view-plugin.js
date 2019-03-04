@@ -5,9 +5,6 @@ $(document).ready(function() {
         classToRemove : 'invisible',
         offset: 100,
         repeat: false
-       // invertBottomOffset: true,
-        //callbackFunction: function(elem, action){},
-        //scrollHorizontal: false
 });
 });
 /**добавление классов для изменения видимости, анимации и появления страниц с javascript'ом*/
@@ -16,12 +13,7 @@ $(document).ready(function() {
         classToAdd: 'visible animated zoomIn',
         classToRemove : 'invisible',
         offset: 100,
-        repeat: false,
-        // invertBottomOffset: true,
-        callbackFunction: function(elem, action){
-             $.getScript("./js/about.js", function(){});
-        },
-        //scrollHorizontal: false
+        repeat: false
     });
 });
 /**добавление классов для изменения видимости, анимации и появления страниц с javascript'ом*/
@@ -30,14 +22,10 @@ $(document).ready(function() {
         classToAdd: 'visible animated zoomIn',
         classToRemove : 'invisible',
         offset: 100,
-        repeat: false,
-        // invertBottomOffset: true,
-        callbackFunction: function(elem, action){
-            $.getScript("./js/skills.js", function(){});
-        },
-        //scrollHorizontal: false
+        repeat: false
     });
 });
+
 /**добавление классов для начала анимации при прокрутки до страницы*/
 $(document).ready(function() {
     $('.fb').viewportChecker({classToAdd: 'fb-anim'});

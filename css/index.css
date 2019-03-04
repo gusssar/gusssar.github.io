@@ -4,16 +4,12 @@ body,
     margin: 0;
     padding: 0;
     font-family: 'PT Serif', serif;
-    /*background: #004f50;*/
     background: #00acad;
 }
 .content{
     position: relative;
 }
 .content-body{
-    /*max-width: 1364px;*/
-    /*min-width: 910px;*/
-    /*margin: 0 auto;*/
     text-align: center;
 }
 
@@ -23,38 +19,20 @@ body,
 .visible{
     opacity:1;
 }
-
 .watermark{
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*right: 0;*/
     font-size: 5.5vw;
     z-index: -1;
     opacity: 0.1;
-
     grid-column: 5/8;
     grid-row: 7/8;
     justify-self: end;
     white-space: nowrap;
 }
-
 .next-link{
-    /*position: absolute;*/
-    /*bottom: 3vh;*/
-    /*margin: 0 auto;*/
-    /*right: 0;*/
-    /*left: 0;*/
-
     grid-column: 3/6;
     grid-row: 7/8;
     align-self: center;
-    /*position: relative;*/
 }
-/*.next-link div{*/
-    /*height: 32px;*/
-    /*width: 32px;*/
-    /*background: url("../img/png/sprite.png") no-repeat 0 0;*/
-/*}*/
 .next-link a::before{
     content: '';
     position: absolute;
@@ -62,7 +40,6 @@ body,
     height: 32px;
     left: 0;
     top: 14px;
-
 }
 .next-link a{
     position: relative;
@@ -71,7 +48,6 @@ body,
     padding: 20px 42px;
     vertical-align: bottom;
     white-space: nowrap;
-
 }
 .next-link a:hover{
     color: rgba(250,235,215,1);
@@ -79,7 +55,6 @@ body,
 .next-link a:hover:before{
     background: url("../img/png/sprite.png") no-repeat -32px -96px;
 }
-
 #id-nav-hello-2 a:hover:before{
     background: url("../img/png/sprite.png") no-repeat 0-96px;
 }

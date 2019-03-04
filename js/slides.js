@@ -270,7 +270,6 @@
 
       var c = $(this).attr('title');
       var path = $(this).attr('data-path');
-      console.log('path',path);
       if ((path) === "" || (path) === null || (path) === "undefined") {
         $(this).parent().parent().parent().find('div.slide_image_title').html('<p>' + c + '</p>');
       } else {
@@ -287,16 +286,6 @@
       });
     });
   };
-
-   //preload large imgs
-  // var preloadImgs = [];
-  // $(document).ready(function() {
-  //   $(".slide_imgs a").each(function() {
-  //     var img = new Image();
-  //     img.src = $(this).attr('href');
-  //     preloadImgs.push(img);
-  //   });
-  // });
     $('.slides').slides();
 }(window.jQuery));
 

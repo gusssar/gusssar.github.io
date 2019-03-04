@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width">
     <title>FrontEnd Gusssar</title>
     <link rel="shortcut icon" href="./img/icons/favicon_32x32.png" type="image/x-icon">
+        <!--Подключаем шрифт-->
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
-
+        <!--Подключаем каскадные стили-->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/hello.css">
@@ -21,8 +22,6 @@
     <script type="text/javascript" src="js/menu.js" defer></script>
         <!--jQuery для работы Viewport Checker'а-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <!--jQuery для работы Кругового Графка в навыки-->
-    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>-->
         <!--Анимирование блоков при прокрутке-->
     <script src="./js/jquery.viewportchecker.js"></script>
         <!--Пермещение при клике на ссылку-->
@@ -32,22 +31,19 @@
         <!--добавление классов для изменения видимости, анимации и появления страниц-->
     <script src="./js/view-plugin.js"></script>
     <!-- Yandex.Metrika counter -->
-    <!--Раскомментить ниже-->
-    <!--<script type="text/javascript" >-->
-        <!--(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};-->
-            <!--m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})-->
-        <!--(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");-->
-
-        <!--ym(52275658, "init", {-->
-            <!--id:52275658,-->
-            <!--clickmap:true,-->
-            <!--trackLinks:true,-->
-            <!--accurateTrackBounce:true,-->
-            <!--webvisor:true-->
-        <!--});-->
-    <!--</script>-->
-    <!--<noscript><div><img src="https://mc.yandex.ru/watch/52275658" style="position:absolute; left:-9999px;" alt="" /></div></noscript>-->
-    <!--До сюда-->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(52275658, "init", {
+            id:52275658,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/52275658" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 </head>
 <body>
@@ -56,10 +52,7 @@
         <header>
             <div id="closeMenu"></div>
            <ul>
-               <li class="head-link logo_alex">
-                   <a href="https://gusssar.github.io/">
-                   </a>
-               </li>
+               <li class="head-link logo_alex"><a href="https://gusssar.github.io/"></a></li>
                <li class="head-link" id="id-nav-hello-1"><a href="#fake-hello">ПРИВЕТ</a></li>
                <li class="head-link" id="id-nav-intro-1"><a href="#intro">ВВЕДЕНИЕ</a></li>
                <li class="head-link" id="id-nav-skills-1"><a href="#skills">НАВЫКИ</a></li>
@@ -111,34 +104,52 @@
                             <div class="code-body">
                             <pre>
 .logo {
+    grid-column: 2/5;
+    grid-row: 2/6;
     cursor:pointer;
     width:40vw;
-    height:49vh;
+    height:55vh;
     position:relative;
-    float: left;
-    left:10vh;.
-    z-index: 2;
+    align-self: end;
+    justify-self: center;
 }
 .wrapper {
     font-size:40px;
     line-height:140px;
-    position:absolute;
-    top:230px;
-    left:315px;
+    position: relative;
+    top:25vh;
+    margin: 0 auto;
     height:140px;
     width:140px;
-     -webkit-transform-style: preserve-3d;
-     -webkit-transform-origin:50%;
-     -webkit-animation-name: ciycle;
-     -webkit-animation-iteration-count: infinite;
-     -webkit-animation-timing-function: linear;
-     -webkit-animation-duration: 12s;
+    -webkit-transform-style: preserve-3d; /*Дочерние элементы будут отображаться в 3D-пространстве*/
+    -webkit-transform-origin:50%; /*точка трансформации*/
+    -webkit-animation-name: cycle_all; /*имя анимации ниже*/
+    -webkit-animation-iteration-count: infinite; /*кол-во повторений*/
+    -webkit-animation-timing-function: linear; /*прогрессия анимации*/
+    -webkit-animation-duration: 12s; /*время анимации*/
+
+    -moz-transform-style: preserve-3d;
+    -moz-transform-origin:50%;
+    -moz-animation-name: cycle_all;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-duration: 12s;
+
+    -o-transform-style: preserve-3d;
+    -o-transform-origin:50%;
+    -o-animation-name: cycle_all;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    -o-animation-duration: 12s;
 }
 .boxes {
-     position:absolute;
-     top:0;
-     left:0;
-      -webkit-transition: all 1s ease-in-out;
+    position:absolute;
+    transform-style: preserve-3d;
+    top:0;
+    left:0;
+    -webkit-transition: all 1s ease-in-out; /*переходное состояние: для всех|время|метод*/
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
  }
 .aa {
     background: #363636;
@@ -150,171 +161,205 @@
     height:140px;
     width:140px;
     text-align:center;
-     -webkit-box-shadow: rgba(0,0,0,0.08) 1px 1px 2px 3px;
-     -webkit-transition:all 0.8s ease-in-out;
-     -webkit-animation-name: ciycle2;
-     -webkit-animation-iteration-count: infinite;
-     -webkit-animation-timing-function: linear;
-     -webkit-animation-duration: 1.4s;
+    -webkit-box-shadow: rgba(0,0,0,0.08) 1px 1px 2px 3px;
+    -webkit-animation-name: cycle_a;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 1.4s;
+    -webkit-transition:all 0.8s ease-in-out;
+
+    -moz-box-shadow: rgba(0,0,0,0.08) 1px 1px 2px 3px;
+    -moz-animation-name: cycle_a;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-duration: 1.4s;
+    -moz-transition:all 0.8s ease-in-out;
+
+    -o-box-shadow: rgba(0,0,0,0.08) 1px 1px 2px 3px;
+    -o-animation-name: cycle_a;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    -o-animation-duration: 1.4s;
+    -o-transition:all 0.8s ease-in-out;
 }
 .tags {
-    position:absolute;
-    top:230px;
-    left:315px;
-    text-align:center;
+    position: relative;
+    top:25vh;
+    margin: 0 auto;
     color: white;
     font-size: 25px;
     line-height:160px;
     height:100px;
     width:100px;
     opacity:0;
-     -webkit-transition: all .5s ease-out;
-     -webkit-transition-delay: 0.30s;
+    -webkit-transition: all .5s ease-out;
+    -webkit-transition-delay: 0.30s;
+
+    -moz-transition: all .5s ease-out;
+    -moz-transition-delay: 0.30s;
+
+    -o-transition: all .5s ease-out;
+    -o-transition-delay: 0.30s;
 }
 .tag {
     position:absolute;
     top:0;
     left:0;
     opacity:0;
-     -webkit-animation-name: tag;
-     -webkit-animation-iteration-count: infinite;
-     -webkit-animation-timing-function: linear;
-     -webkit-animation-duration: 2.5s;
+    -webkit-animation-name: tag;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 3.1s;
+
+    -moz-animation-name: tag;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-duration: 3.1s;
+
+    -o-animation-name: tag;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    -o-animation-duration: 3.1s;
 }
 .tag:nth-child(1) {
-     -webkit-animation-delay:0s;
+    -webkit-animation-delay:0s;
+    -moz-animation-delay:0s;
+    -o-animation-delay:0s;
 }
 .tag:nth-child(2) {
-     -webkit-animation-delay:.5s;
+    -webkit-animation-delay:0.5s;
+    -moz-animation-delay:.5s;
+    -o-animation-delay:.5s;
 }
 .tag:nth-child(3) {
-     -webkit-animation-delay:1s;
+    -webkit-animation-delay:1s;
+    -moz-animation-delay:1s;
+    -o-animation-delay:1s;
 }
 .tag:nth-child(4) {
-     -webkit-animation-delay:1.5s;
+    -webkit-animation-delay:1.5s;
+    -moz-animation-delay:1.5s;
+    -o-animation-delay:1.5s;
 }
 .tag:nth-child(5) {
-     -webkit-animation-delay:2s;
+    -webkit-animation-delay:2s;
+    -moz-animation-delay:2s;
+    -o-animation-delay:2s;
 }
+.tag:nth-child(6) {
+    -webkit-animation-delay:2.5s;
+    -moz-animation-delay:2.5s;
+    -o-animation-delay:2.5s;
+}
+.zero,
 .one,
 .two,
 .three,
 .four,
-.five,
-.six{
+.five{
     border-radius:2px;
     position:absolute;
     top:0;
     left:0;
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     opacity:0.50;
     line-height:140px;
     text-align:center;
     color:#fff;
-     -webkit-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
 }
-.one {
-    background: #000000;
-     -webkit-transform:translateZ(80px);
-}
-
-.two {
-    background: #a30000;
-     -webkit-transform: rotateX(90deg) translateY(0) translateZ(-80px);
-}
-
-.three {
-    background:blue;
-     -webkit-transform: translateY(0) translateZ(-80px);
-}
-.four {
+.zero{
     background:green;
-     -webkit-transform: rotateX(90deg) translateY(0) translateZ(80px);
+    -webkit-transform: rotateX(90deg) translateZ(70px);
+    -moz-transform: rotateX(90deg) translateZ(70px);
+    -o-transform: rotateX(90deg) translateZ(70px);
 }
-.five {
-    background:darkblue;
-     -webkit-transform: rotateY(-90deg) translateX(0) translateY(0) translateZ(80px);
+.one{
+    background: #a30000;
+    -webkit-transform: rotateX(90deg) translateZ(-70px);
+    -moz-transform: rotateX(90deg) translateZ(-70px);
+    -o-transform: rotateX(90deg) translateZ(-70px);
 }
-.six {
+.two{
+    background: #000000;
+    -webkit-transform: rotateY(0deg) translateZ(70px);
+    -moz-transform: rotateY(0deg) translateZ(70px);
+    -o-transform: rotateY(0deg) translateZ(70px);
+}
+.three{
     background:purple;
-     -webkit-transform: rotateY(90deg) translateX(0) translateZ(80px) translateY(0);
+    -webkit-transform: rotateY(90deg) translateZ(70px);
+    -moz-transform: rotateY(90deg) translateZ(70px);
+    -o-transform: rotateY(90deg) translateZ(70px);
+}
+.four{
+    background:blue;
+    -webkit-transform: rotateY(-180deg) translateZ(70px);
+    -moz-transform: rotateY(-180deg) translateZ(70px);
+    -o-transform: rotateY(-180deg) translateZ(70px);
+}
+.five{
+    background:darkblue;
+    -webkit-transform: rotateY(270deg) translateZ(70px);
+    -moz-transform: rotateY(-90deg) translateZ(70px);
+    -o-transform: rotateY(270deg) translateZ(70px);
+}
+.logo:hover .aa {
+    top:-250px;
+}
+.logo:hover .tags {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin:50%;
+    -webkit-transform:  rotateX(-200deg) rotateY(-180deg) rotateZ(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-transform-origin:50%;
+    -moz-transform:  rotateX(-200deg) rotateY(-180deg) rotateZ(-180deg);
+    top: 12vh;
+    opacity:1;
 }
 .logo:hover .box {
     background:gray;
     opacity:0.25;
 }
-.logo:hover .one{
-     -webkit-transform: rotateX(90deg) translateZ(80px) translateY(160px);
-     -webkit-transform-origin: 100%;
+.logo:hover .zero{
+    -webkit-transform: rotateX(90deg) translateZ(-70px);
+    -moz-transform: rotateX(90deg) translateZ(-70px);
+    -o-transform: rotateX(90deg) translateZ(-70px);
 }
 .logo:hover .two{
-     -webkit-transform: rotateX(90deg) translateY(0) translateZ(80px);
-    opacity:1;
+    -webkit-transform: rotateX(90deg) rotateY(0deg) translateY(140px) translateZ(-70px);
+    -moz-transform: rotateX(90deg) rotateY(0deg) translateY(140px) translateZ(-70px);
+    -o-transform: rotateX(90deg) rotateY(0deg) translateY(140px) translateZ(-70px);
 }
-.logo:hover .three {
-     -webkit-transform: rotateX(-90deg) translateY(160px) translateZ(-80px);
+.logo:hover .three{
+    -webkit-transform: rotateZ(270deg) rotateY(90deg) translateY(140px) translateZ(-70px);
+    -moz-transform: rotateZ(-90deg) rotateY(90deg) translateY(140px) translateZ(-70px);
+    -o-transform: rotateZ(270deg) rotateY(90deg) translateY(140px) translateZ(-70px);
 }
-.logo:hover .five {
-     -webkit-transform: rotateZ(90deg) rotateY(-90deg) translateX(0) translateY(160px) translateZ(80px);
+.logo:hover .four{
+    -webkit-transform: rotateX(270deg) rotateY(-180deg) translateY(140px) translateZ(-70px);
+    -moz-transform: rotateX(270deg) rotateY(-180deg) translateY(140px) translateZ(-70px);
+    -o-transform: rotateX(270deg) rotateY(-180deg) translateY(140px) translateZ(-70px);
 }
-.logo:hover .six{
-     -webkit-transform: rotateY(90deg) translateX(80px) translateZ(80px) translateY(-80px) rotateX(90deg);
-     -webkit-transform-origin: 100%;
+.logo:hover .five{
+    -webkit-transform: rotateZ(90deg) rotateY(270deg) translateY(140px) translateZ(-70px);
+    -moz-transform: rotateX(90deg) rotateZ(90deg)  translateY(140px) translateZ(-70px);
+    -o-transform: rotateZ(90deg) rotateY(270deg) translateY(140px) translateZ(-70px);
 }
+@-webkit-keyframes cycle_all {from {-webkit-transform: rotateX(-25deg) rotateY(0deg)} to {-webkit-transform: rotateX(-25deg) rotateY(360deg)}}
+@-moz-keyframes    cycle_all {from {-moz-transform:    rotateX(-25deg) rotateY(0deg)} to {-moz-transform:    rotateX(-25deg) rotateY(360deg)}}
+@-o-keyframes      cycle_all {from {-o-transform:      rotateX(-25deg) rotateY(0deg)} to {-o-transform:      rotateX(-25deg) rotateY(360deg)}}
 
-.logo:hover .boxes {
-    top:80px;
-}
+@-webkit-keyframes cycle_a {from {-webkit-transform: rotateY(0deg)} to {-webkit-transform: rotateY(-360deg)}}
+   @-moz-keyframes cycle_a {from {-moz-transform:    rotateY(0deg)} to {-moz-transform:    rotateY(-360deg)}}
+     @-o-keyframes cycle_a {from {-o-transform:      rotateY(0deg)} to {-o-transform:      rotateY(-360deg)}}
 
-.logo:hover .aa {
-    top:-250px;
-}
-.logo:hover .tags {
-     -webkit-transform-style: preserve-3d;
-     -webkit-transform-origin:50%;
-     -webkit-transform:  rotateX(-200deg) rotateY(-180deg) rotateZ(-180deg);
-    top: 220px;
-    left: 350px;
-    opacity:1;
-}
-
-@-webkit-keyframes ciycle {
-    from {
-         -webkit-transform: rotateX(-25deg) rotateY(0deg);
-    }
-    to {
-         -webkit-transform: rotateX(-25deg) rotateY(360deg);
-    }
-}
-
-@-webkit-keyframes ciycle2 {
-    from {
-         -webkit-transform: rotateY(0deg);
-    }
-    to {
-         -webkit-transform: rotateY(-360deg);
-    }
-}
-
-@-webkit-keyframes ciycle3 {
-    from {
-         -webkit-transform:rotateY(180deg) translateZ(1px);
-    }
-    to {
-         -webkit-transform:rotateY(-180deg) translateZ(1px);
-    }
-}
-
-@-webkit-keyframes tag {
-    0%{
-        opacity:1;
-    }
-    100% {
-        opacity:0;
-        top:-140px;
-    }
-}
+@-webkit-keyframes  tag {from{opacity:1} to{opacity:0; top:-140px}}
+   @-moz-keyframes  tag {0%{opacity:1} 100%{opacity:0; top:-140px}}
+     @-o-keyframes  tag {0%{opacity:1} 100%{opacity:0; top:-140px}}
                             </pre>
                             </div>
                         </div>
@@ -324,6 +369,7 @@
                     <div class="content-intro-to-skills  next-link" id="id-nav-skills-2">
                         <a href="#skills">НАВЫКИ</a>
                     </div>
+                    <!--скрипт для корректной работы в сафари-->
                     <script>
                         if (/constructor/i.test(window.HTMLElement) ||
                             (function (p)
@@ -370,7 +416,6 @@
                             <text class="diamond-txt" x="255" y="140" font-size="37">
                                 <tspan>React.js</tspan>
                             </text>
-
                             <text class="diamond-txt" x="515" y="155" font-size="23">
                                 <tspan>Webpack</tspan>
                             </text>
@@ -425,8 +470,6 @@
                     <div class="content-skills-to-works  next-link" id="id-nav-works-2">
                         <a href="#works">РАБОТЫ</a>
                     </div>
-
-
                 </div>
 
                 <div class="content-works content-view invisible" id="works">
@@ -465,7 +508,6 @@
                                          title='Может я Вам смогу помочь с проектом, обязательно свяжитесь со мной'></a>
                             </div>
                         </div>
-
                     </div>
                     <script>$("div.slides_thumbs").slides({thumbs: "on"});</script>
                     <div class="watermark">РАБОТЫ</div>
@@ -576,17 +618,17 @@
                 <div class="content-contact content-view invisible" id="contact">
                     <div class="contact-body">
                             <a href="https://www.facebook.com/gusssar">
-                                <img src="./img/svg/facebook.svg" class="fb"></a>
+                                <img src="./img/svg/facebook.svg" class="fb" alt="Facebook"></a>
                             <a href="https://github.com/gusssar">
-                                <img src="./img/svg/github-logo.svg" class="gh"></a>
+                                <img src="./img/svg/github-logo.svg" class="gh" alt="GitHub"></a>
                             <a href="https://www.linkedin.com/in/gusssar/">
-                                <img src="./img/svg/linkedin.svg" class="st"></a>
+                                <img src="./img/svg/linkedin.svg" class="st" alt="LinkedIn"></a>
                             <a href="https://twitter.com/yanggussar">
-                                <img src="./img/svg/twitter.svg" class="tw"></a>
+                                <img src="./img/svg/twitter.svg" class="tw" alt="Twitter"></a>
                             <a href="https://vk.com/yanggussar">
-                                <img src="./img/svg/vk.svg" class="vk"></a>
+                                <img src="./img/svg/vk.svg" class="vk" alt="Vkontakte"></a>
                             <a href="mailto:a.alexeev.mai@yandex.ru">
-                                <img src="./img/svg/gmail.svg" class="mail"></a>
+                                <img src="./img/svg/gmail.svg" class="mail" alt="E-mail"></a>
                     </div>
                     <div class="watermark">КОНТАКТЫ</div>
                     <div class="content-contact-to-hello next-link" id="id-nav-hello-2">

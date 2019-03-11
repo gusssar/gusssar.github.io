@@ -117,7 +117,7 @@
     position: relative;
     top:25vh;
     margin: 0 auto;
-    color: white;
+    color: rgba(49,49,49,1);
     font-size: 25px;
     line-height:160px;
     height:100px;

@@ -4,7 +4,7 @@ body,
     margin: 0;
     padding: 0;
     font-family: 'PT Serif', serif;
-    background: #00acad;
+    background: rgba(250,250,250,1);
 }
 .content{
     position: relative;
@@ -44,13 +44,13 @@ body,
 .next-link a{
     position: relative;
     text-decoration: none;
-    color: rgba(250,235,215,0.3);
+    color: rgba(49,49,49,0.3);
     padding: 20px 42px;
     vertical-align: bottom;
     white-space: nowrap;
 }
 .next-link a:hover{
-    color: rgba(250,235,215,1);
+    color: rgba(49,49,49,1);
 }
 .next-link a:hover:before{
     background: url("../img/png/sprite.png") no-repeat -32px -96px;

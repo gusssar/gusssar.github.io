@@ -1,0 +1,38 @@
+{
+    "pic_1": {
+        "href":"img/jpg/w2560/bulletin-board.jpg",
+        "alt":"Доска объявлений",
+        "data-path":"https://github.com/gusssar/bulletin-board",
+        "title":"\"Доска объявлениий\" реализованное с помощью React.js"
+    },
+    "pic_2": {
+        "href":"img/jpg/w2560/djino.jpg",
+        "alt":"Промо-страница",
+        "data-path":"https://github.com/gusssar/DjiniTestSecond",
+        "title":"Промо-странца"
+    },
+    "pic_3": {
+        "href":"img/jpg/w2560/table.jpg",
+        "alt":"Табло Шереметьево",
+        "data-path":"https://github.com/gusssar/table-air",
+        "title":"Табло Шереметьево реализованное с помощью React.js"
+    },
+    "pic_4": {
+        "href":"img/jpg/w2560/yandex_home.jpg",
+        "alt":"Яндекс.Дом",
+        "data-path":"https://github.com/gusssar/entrance_task_2",
+        "title":"Макет страницы &quotЯндекс.Дом&quot"
+    },
+    "pic_5": {
+        "href":"img/jpg/w2560/gusssar",
+        "alt":"Личный проект",
+        "data-path":"https://github.com/gusssar/bulletin-board",
+        "title":"Постоянный личный проект, который я делаю в свое свободное время."
+    },
+    "pic_6": {
+        "href":"img/jpg/w2560/next_page.jpg",
+        "alt":"Дальше жарче",
+        "data-path":"mailto:a.alexeev.mai@yandex.ru",
+        "title":"Может я Вам смогу помочь с проектом, обязательно свяжитесь со мной"
+    }
+}

@@ -1,0 +1,9 @@
+.slides__preview {
+    grid-column: 2/6;
+    grid-row: 2/7
+}
+
+.slides__list{
+    grid-column: 6/8;
+    grid-row: 2/7
+}

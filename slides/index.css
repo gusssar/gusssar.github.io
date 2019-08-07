@@ -8,6 +8,30 @@
     grid-row: 2/7
 }
 
+.slides__preview{
+    cursor: pointer;
+    background: #f3f3f3 no-repeat center;
+    background-size: contain;
+    background-image: url("../img/jpg/w2560/bulletin-board.jpg")
+}
+.item{
+    list-style-type: none;
+    text-align: left;
+    /* border: 2px black groove; */
+    /* margin-top: 5px; */
+    padding: 10px 0 10px 10px;
+    cursor: default;
+}
+
 .item__focused{
-    color: red
+    color: #c8c8c8;
+    background: rgba(49,49,49,0.9)
+}
+.item__subscribe{
+    padding-inline-start: 20px
+}
+.item__subscribe li{
+    list-style-type: none;
+    font-style: italic;
+    font-size: 12px;
 }
